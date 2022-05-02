@@ -15,11 +15,11 @@ namespace BookStore.Model.Entities
 
 	public partial class HoaDon
     {
-        public int MaHoaDon { get; set; }
+        public int? MaHoaDon { get; set; }
         public System.DateTime NgayGiaoDich { get; set; }
         public string MaDT { get; set; }
         public string LoaiHoaDon { get; set; }
-        public double GiamGia { get; set; }
+        public decimal GiamGia { get; set; }
         public double TongTien { get; set; }
 
 		public HoaDon()
@@ -33,8 +33,18 @@ namespace BookStore.Model.Entities
             NgayGiaoDich = Convert.ToDateTime(row["NgayGiaoDich"]);
             MaDT = row["MaDT"].ToString();
             LoaiHoaDon = row["LoaiHoaDon"].ToString();
-            GiamGia = (double)row["GiamGia"];
+            GiamGia = decimal.Parse(row["GiamGia"].ToString());
             TongTien = (double)row["TongTien"];
         }
+
+		public HoaDon(DateTime ngayGiaoDich, string maDT, string loaiHoaDon, decimal giamGia, double tongTien, int? maHoaDon = null)
+		{
+            MaHoaDon = maHoaDon;
+            NgayGiaoDich = ngayGiaoDich;
+            MaDT = maDT;
+            LoaiHoaDon = loaiHoaDon;
+            GiamGia = giamGia;
+            TongTien = tongTien;    
+		}
     }
 }
