@@ -17,7 +17,7 @@ namespace BookStore.Extensions.Popup
 		private Form ownerForm;
 		protected Panel Content;
 
-		protected DialogResult dialogResult { get; set; } = DialogResult.None;
+		public DialogResult dialogResult { get; set; } = DialogResult.None;
 
 		public DialogResult ShowDialog()
 		{
