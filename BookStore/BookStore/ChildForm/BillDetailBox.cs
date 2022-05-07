@@ -231,6 +231,6 @@ namespace BookStore.ChildForm
 		private System.Windows.Forms.Label lbTotalBillPrice;
 		private System.Windows.Forms.Label lbDot;
 		private System.Windows.Forms.Label lbTimeBill;
-		private FontAwesome.Sharp.IconButton btnFoward;
+		public FontAwesome.Sharp.IconButton btnFoward;
 	}
 }
