@@ -89,11 +89,14 @@ namespace BookStore.Extensions.Popup
 		private void DrawPopupBackground()
 		{
 			this.BackgroundImage = ownerForm.FormClientAreaToImage();
-			using (Graphics gr = Graphics.FromImage(this.BackgroundImage))
+			if (this.BackgroundImage != null)
 			{
-				using (Brush br = new SolidBrush(Color.FromArgb(90, Color.Black)))
+				using (Graphics gr = Graphics.FromImage(this.BackgroundImage))
 				{
-					gr.FillRectangle(br, 0, 0, this.BackgroundImage.Width, this.BackgroundImage.Height);
+					using (Brush br = new SolidBrush(Color.FromArgb(90, Color.Black)))
+					{
+						gr.FillRectangle(br, 0, 0, this.BackgroundImage.Width, this.BackgroundImage.Height);
+					}
 				}
 			}
 		}

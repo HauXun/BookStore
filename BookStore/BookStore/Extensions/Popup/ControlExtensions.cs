@@ -27,13 +27,17 @@ namespace BookStore.Extensions.Popup
 
 				int clientAreaWidth = form.ClientSize.Width;
 				int clientAreaHeight = form.ClientSize.Height;
-				Bitmap clientAreaImage = new Bitmap(clientAreaWidth, clientAreaHeight);
+				Bitmap clientAreaImage = null;
 
-				using (Graphics gr = Graphics.FromImage(clientAreaImage))
+				if (clientAreaHeight > 0 && clientAreaWidth > 0)
 				{
-					gr.DrawImage(frmImage, 0, 0,
-						new Rectangle(diffx, diffy, clientAreaWidth, clientAreaHeight),
-						GraphicsUnit.Pixel);
+					clientAreaImage = new Bitmap(clientAreaWidth, clientAreaHeight);
+					using (Graphics gr = Graphics.FromImage(clientAreaImage))
+					{
+						gr.DrawImage(frmImage, 0, 0,
+							new Rectangle(diffx, diffy, clientAreaWidth, clientAreaHeight),
+							GraphicsUnit.Pixel);
+					}
 				}
 				return clientAreaImage;
 			}
