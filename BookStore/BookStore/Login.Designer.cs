@@ -167,7 +167,7 @@
 			this.pnlUsername.Controls.Add(this.usernameIcon);
 			this.pnlUsername.Location = new System.Drawing.Point(307, 145);
 			this.pnlUsername.Name = "pnlUsername";
-			this.pnlUsername.Size = new System.Drawing.Size(274, 42);
+			this.pnlUsername.Size = new System.Drawing.Size(293, 42);
 			this.pnlUsername.TabIndex = 0;
 			// 
 			// usernameIcon
@@ -193,7 +193,7 @@
 			this.pnlPassword.Controls.Add(this.passwordIcon);
 			this.pnlPassword.Location = new System.Drawing.Point(307, 193);
 			this.pnlPassword.Name = "pnlPassword";
-			this.pnlPassword.Size = new System.Drawing.Size(274, 42);
+			this.pnlPassword.Size = new System.Drawing.Size(293, 42);
 			this.pnlPassword.TabIndex = 0;
 			// 
 			// tbPassword
