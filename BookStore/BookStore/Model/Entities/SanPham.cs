@@ -18,6 +18,7 @@ namespace BookStore.Model.Entities
         public string TenSP { get; set; }
         public string DVT { get; set; }
         public int SoLuongTon { get; set; }
+        public double Gia { get; set; }
         public string ThuongHieu { get; set; }
 		public bool Cancellation { get; set; }
 	}
