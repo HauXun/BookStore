@@ -16,34 +16,35 @@ namespace BookStore.ChildForm
 		private Panel pnlBox3;
 		private Guna.UI2.WinForms.Guna2NumericUpDown nudProductAmount;
 		private Panel pnlBox4;
+		private Guna2ContextMenuStrip cms;
+		public ToolStripMenuItem tsmiXoa;
 		private Label lbTotalPrice;
+		private decimal preAmountValue = 1;
 
 		public Label LbProductName { get => lbProductName; set => lbProductName = value; }
 		public Guna2NumericUpDown NudPrice { get => nudPrice; set => nudPrice = value; }
 		public Guna2NumericUpDown NudProductAmount { get => nudProductAmount; set => nudProductAmount = value; }
 		public Label LbTotalPrice { get => lbTotalPrice; set => lbTotalPrice = value; }
+		public decimal PreAmountValue { get => preAmountValue; set => preAmountValue = value; }
 
 		public BillRowBox()
 		{
 			InitializeComponent();
 		}
 
-		public BillRowBox(DataRow row)
+		public BillRowBox(DataRow row) : this()
 		{
-			InitializeComponent();
 			LbProductName.Text = row["TenSP"].ToString();
 			NudPrice.Value = decimal.Parse(row["Gia"].ToString());
-			NudPrice.Value = decimal.Parse(row["SoLuong"].ToString());
-			LbTotalPrice.Text = row["ThanhTien"].ToString();
+			NudProductAmount.Value = decimal.Parse(row["SoLuong"].ToString());
 		}
 
-		public BillRowBox(string productName, decimal nudPrice, byte nudProductAmount, string totalPrice)
+		public BillRowBox(string productName, decimal nudPrice, byte nudProductAmount) : this()
 		{
-			InitializeComponent();
 			this.LbProductName.Text = productName;
 			this.NudPrice.Value = nudPrice;
 			this.NudProductAmount.Value = nudProductAmount;
-			this.LbTotalPrice.Text = totalPrice;
+			this.LbTotalPrice.Text = (NudPrice.Value * NudProductAmount.Value).ToString();
 		}
 
 		private void InitializeComponent()
@@ -58,6 +59,8 @@ namespace BookStore.ChildForm
 			this.nudProductAmount = new Guna.UI2.WinForms.Guna2NumericUpDown();
 			this.pnlBox4 = new System.Windows.Forms.Panel();
 			this.lbTotalPrice = new System.Windows.Forms.Label();
+			this.cms = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
+			this.tsmiXoa = new System.Windows.Forms.ToolStripMenuItem();
 			this.pnlBillRowBox.SuspendLayout();
 			this.flpBillRowBox.SuspendLayout();
 			this.pnlBox1.SuspendLayout();
@@ -66,6 +69,7 @@ namespace BookStore.ChildForm
 			this.pnlBox3.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.nudProductAmount)).BeginInit();
 			this.pnlBox4.SuspendLayout();
+			this.cms.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// pnlBillRowBox
@@ -119,7 +123,6 @@ namespace BookStore.ChildForm
 			this.lbProductName.Name = "lbProductName";
 			this.lbProductName.Size = new System.Drawing.Size(483, 21);
 			this.lbProductName.TabIndex = 1;
-			this.lbProductName.Text = "Sách hướng dẫn làm giàu";
 			this.lbProductName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			// 
 			// pnlBox2
@@ -152,11 +155,6 @@ namespace BookStore.ChildForm
 			this.nudPrice.Size = new System.Drawing.Size(180, 22);
 			this.nudPrice.TabIndex = 30;
 			this.nudPrice.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			this.nudPrice.Value = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
 			// 
 			// pnlBox3
 			// 
@@ -221,12 +219,35 @@ namespace BookStore.ChildForm
 			this.lbTotalPrice.Name = "lbTotalPrice";
 			this.lbTotalPrice.Size = new System.Drawing.Size(176, 21);
 			this.lbTotalPrice.TabIndex = 2;
-			this.lbTotalPrice.Text = "1354655";
+			this.lbTotalPrice.Text = "0";
 			this.lbTotalPrice.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			// 
+			// cms
+			// 
+			this.cms.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmiXoa});
+			this.cms.Name = "cms";
+			this.cms.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+			this.cms.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
+			this.cms.RenderStyle.ColorTable = null;
+			this.cms.RenderStyle.RoundedEdges = true;
+			this.cms.RenderStyle.SelectionArrowColor = System.Drawing.Color.White;
+			this.cms.RenderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+			this.cms.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
+			this.cms.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
+			this.cms.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+			this.cms.Size = new System.Drawing.Size(144, 26);
+			// 
+			// tsmiXoa
+			// 
+			this.tsmiXoa.Name = "tsmiXoa";
+			this.tsmiXoa.Size = new System.Drawing.Size(143, 22);
+			this.tsmiXoa.Text = "Xóa mục này";
 			// 
 			// BillRowBox
 			// 
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+			this.ContextMenuStrip = this.cms;
 			this.Controls.Add(this.pnlBillRowBox);
 			this.Margin = new System.Windows.Forms.Padding(0);
 			this.Name = "BillRowBox";
@@ -239,6 +260,7 @@ namespace BookStore.ChildForm
 			this.pnlBox3.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.nudProductAmount)).EndInit();
 			this.pnlBox4.ResumeLayout(false);
+			this.cms.ResumeLayout(false);
 			this.ResumeLayout(false);
 
 		}
