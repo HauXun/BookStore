@@ -34,9 +34,19 @@ namespace BookStore.Model.BusinessLogicLayer
 			return AccountDAL.Instance.CancleAccount(name, sdt);
 		}
 
+		public int ResetPassword(string idAccount)
+		{
+			return AccountDAL.Instance.ResetPassword(idAccount);
+		}
+
 		public DataTable GetAllAccount()
 		{
 			return AccountDAL.Instance.GetAllAccount();
+		}
+
+		public DataTable GetAllAccountRole()
+		{
+			return AccountDAL.Instance.GetAllAccountRole();
 		}
 	}
 }
