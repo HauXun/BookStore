@@ -33,6 +33,8 @@ namespace BookStore.Pages
 			}
 		}
 
+		private bool loadAccess = false;
+
 		public Bill()
 		{
 			InitializeComponent();
@@ -40,6 +42,7 @@ namespace BookStore.Pages
 
 			BillRole();
 			dpkHeader1.Value = timePrevious;
+			loadAccess = true;
 			dpkHeader2.Value = timeNow;
 		}
 
@@ -211,7 +214,7 @@ namespace BookStore.Pages
 		{
 			try
 			{
-				if (cbBillRole.SelectedValue != null)
+				if (cbBillRole.SelectedValue != null && loadAccess)
 					InvoiceDetailsByRole(cbBillRole.SelectedValue.ToString());
 			}
 			catch (Exception ex)
@@ -223,7 +226,7 @@ namespace BookStore.Pages
 
 		private void btnPriceApply_Click(object sender, EventArgs e)
 		{
-			if (!IsValidPriceCheck())
+			if (!IsValidPriceCheck() || loadAccess == false)
 				return;
 
 			float price1 = float.Parse(tbPeriodPrice1.Text);
@@ -235,7 +238,7 @@ namespace BookStore.Pages
 		{
 			try
 			{
-				if (cbBillRole.SelectedValue != null)
+				if (cbBillRole.SelectedValue != null && loadAccess)
 					InvoiceDetailsByStages(dpkHeader1.Value, dpkHeader2.Value);
 			}
 			catch (Exception ex)
