@@ -43,13 +43,14 @@ namespace BookStore.Model.DataAccessLayer
 
 		public int CreateAccount(Taikhoan taikhoan)
 		{
-			byte[] temp = ASCIIEncoding.ASCII.GetBytes(taikhoan.Password);
-			byte[] hasData = new MD5CryptoServiceProvider().ComputeHash(temp);
-
-			string pass = string.Join("", hasData);
-
-			string query = "EXEC dbo.USP_CreateAccount @Name , @Pass , @SDT";
-			return DataProvider.Instance.ExcuteNonQuery(query, new object[] { taikhoan.TenTaiKhoan, pass, taikhoan.SDT });
+			string query = "EXEC dbo.USP_CreateAccount @HoTen , @DiaChi , @SDT , @RoleID";
+			return DataProvider.Instance.ExcuteNonQuery(query, new object[]
+			{
+				taikhoan.HoTen, 
+				taikhoan.DiaChi,
+				taikhoan.SDT,
+				taikhoan.RoleID,
+			});
 		}
 
 		public int CancleAccount(string name, string sdt)
@@ -58,9 +59,21 @@ namespace BookStore.Model.DataAccessLayer
 			return DataProvider.Instance.ExcuteNonQuery(query, new object[] { name, sdt });
 		}
 
+		public int ResetPassword(string idAccount)
+		{
+			string query = "EXEC dbo.USP_ResetPassword @IDAccount";
+			return DataProvider.Instance.ExcuteNonQuery(query, new object[] { idAccount });
+		}
+
 		public DataTable GetAllAccount()
 		{
 			string query = "SELECT * FROM dbo.Taikhoan";
+			return DataProvider.Instance.ExcuteQuery(query);
+		}
+
+		public DataTable GetAllAccountRole()
+		{
+			string query = "SELECT * FROM dbo.UserRole";
 			return DataProvider.Instance.ExcuteQuery(query);
 		}
 	}
