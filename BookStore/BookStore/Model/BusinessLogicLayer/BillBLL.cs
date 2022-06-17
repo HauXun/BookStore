@@ -81,9 +81,12 @@ namespace BookStore.Model.BusinessLogicLayer
 			List<BillRowBox> result = new List<BillRowBox>();
 			foreach (DataRow row in data.Rows)
 			{
-				result.Add(new BillRowBox(row)
+				result.Add(new BillRowBox(
+					row["TenSP"].ToString(),
+					decimal.Parse(row["Gia"].ToString()),
+					Convert.ToByte(row["SoLuong"].ToString()))
 				{
-					Tag = row["MaSP"].ToString()
+					Tag = new Tuple<string, int>(row["MaSP"].ToString(), int.Parse(row["SoLuongTon"].ToString()))
 				});
 			}
 			return result;
