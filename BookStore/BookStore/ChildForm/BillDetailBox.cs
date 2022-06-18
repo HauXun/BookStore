@@ -131,9 +131,8 @@ namespace BookStore.ChildForm
 			this.lbBillID.Location = new System.Drawing.Point(3, 10);
 			this.lbBillID.Margin = new System.Windows.Forms.Padding(3, 10, 3, 5);
 			this.lbBillID.Name = "lbBillID";
-			this.lbBillID.Size = new System.Drawing.Size(135, 19);
+			this.lbBillID.Size = new System.Drawing.Size(0, 19);
 			this.lbBillID.TabIndex = 9;
-			this.lbBillID.Text = "84282649272154";
 			// 
 			// flpPriceNTime
 			// 
@@ -155,16 +154,16 @@ namespace BookStore.ChildForm
 			this.lbTotalBillPrice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(67)))), ((int)(((byte)(69)))));
 			this.lbTotalBillPrice.Location = new System.Drawing.Point(3, 0);
 			this.lbTotalBillPrice.Name = "lbTotalBillPrice";
-			this.lbTotalBillPrice.Size = new System.Drawing.Size(77, 20);
+			this.lbTotalBillPrice.Size = new System.Drawing.Size(89, 20);
 			this.lbTotalBillPrice.TabIndex = 10;
-			this.lbTotalBillPrice.Text = "Cost: 156$";
+			this.lbTotalBillPrice.Text = "Thành tiền: ";
 			// 
 			// lbDot
 			// 
 			this.lbDot.AutoSize = true;
 			this.lbDot.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Bold);
 			this.lbDot.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(11)))), ((int)(((byte)(85)))));
-			this.lbDot.Location = new System.Drawing.Point(86, 0);
+			this.lbDot.Location = new System.Drawing.Point(98, 0);
 			this.lbDot.Name = "lbDot";
 			this.lbDot.Size = new System.Drawing.Size(15, 19);
 			this.lbDot.TabIndex = 11;
@@ -175,11 +174,11 @@ namespace BookStore.ChildForm
 			this.lbTimeBill.AutoSize = true;
 			this.lbTimeBill.Font = new System.Drawing.Font("Microsoft YaHei", 10F);
 			this.lbTimeBill.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(11)))), ((int)(((byte)(85)))));
-			this.lbTimeBill.Location = new System.Drawing.Point(107, 0);
+			this.lbTimeBill.Location = new System.Drawing.Point(119, 0);
 			this.lbTimeBill.Name = "lbTimeBill";
 			this.lbTimeBill.Size = new System.Drawing.Size(70, 20);
 			this.lbTimeBill.TabIndex = 12;
-			this.lbTimeBill.Text = "13:47 pm";
+			this.lbTimeBill.Text = "00:00 pm";
 			// 
 			// btnFoward
 			// 
