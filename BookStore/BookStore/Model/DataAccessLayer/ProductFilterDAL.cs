@@ -47,6 +47,13 @@ namespace BookStore.Model.DataAccessLayer
 			return data;
 		}
 
+		public DataTable GetColumnProductName(string tableName)
+		{
+			string query = "EXEC dbo.USP_GetColumnProductName @TableName";
+			DataTable data = DataProvider.Instance.ExcuteQuery(query, new object[] { tableName });
+			return data;
+		}
+
 		/// <summary>
 		/// Lọc sản phẩm
 		/// </summary>
