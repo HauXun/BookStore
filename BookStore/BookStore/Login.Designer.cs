@@ -29,6 +29,7 @@
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
 			this.errorProviderWar = new System.Windows.Forms.ErrorProvider(this.components);
 			this.wPB = new Guna.UI2.WinForms.Guna2WinProgressIndicator();
 			this.pControl = new System.Windows.Forms.Panel();
@@ -271,6 +272,7 @@
 			this.Controls.Add(this.pControl);
 			this.Controls.Add(this.wPB);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
 			this.Name = "Login";
