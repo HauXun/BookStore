@@ -243,9 +243,9 @@
 			this.lbHeaderBoxValue4.Margin = new System.Windows.Forms.Padding(3, 12, 3, 3);
 			this.lbHeaderBoxValue4.Name = "lbHeaderBoxValue4";
 			this.lbHeaderBoxValue4.Padding = new System.Windows.Forms.Padding(0, 0, 20, 0);
-			this.lbHeaderBoxValue4.Size = new System.Drawing.Size(104, 31);
+			this.lbHeaderBoxValue4.Size = new System.Drawing.Size(48, 31);
 			this.lbHeaderBoxValue4.TabIndex = 2;
-			this.lbHeaderBoxValue4.Text = "49,1%";
+			this.lbHeaderBoxValue4.Text = "0";
 			// 
 			// pnlHeaderBoxPercent4
 			// 
@@ -257,10 +257,10 @@
 			this.pnlHeaderBoxPercent4.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
 			this.pnlHeaderBoxPercent4.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
 			this.pnlHeaderBoxPercent4.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-			this.pnlHeaderBoxPercent4.Location = new System.Drawing.Point(113, 16);
+			this.pnlHeaderBoxPercent4.Location = new System.Drawing.Point(57, 16);
 			this.pnlHeaderBoxPercent4.Margin = new System.Windows.Forms.Padding(3, 16, 3, 3);
 			this.pnlHeaderBoxPercent4.Name = "pnlHeaderBoxPercent4";
-			this.pnlHeaderBoxPercent4.Size = new System.Drawing.Size(65, 22);
+			this.pnlHeaderBoxPercent4.Size = new System.Drawing.Size(37, 22);
 			this.pnlHeaderBoxPercent4.TabIndex = 1;
 			// 
 			// lbHeaderBoxPercent4
@@ -272,9 +272,9 @@
 			this.lbHeaderBoxPercent4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(61)))), ((int)(((byte)(61)))));
 			this.lbHeaderBoxPercent4.Location = new System.Drawing.Point(3, 3);
 			this.lbHeaderBoxPercent4.Name = "lbHeaderBoxPercent4";
-			this.lbHeaderBoxPercent4.Size = new System.Drawing.Size(59, 19);
+			this.lbHeaderBoxPercent4.Size = new System.Drawing.Size(31, 19);
 			this.lbHeaderBoxPercent4.TabIndex = 1;
-			this.lbHeaderBoxPercent4.Text = "-0,09%";
+			this.lbHeaderBoxPercent4.Text = "0%";
 			// 
 			// lbHeaderBoxTitle4
 			// 
@@ -308,7 +308,7 @@
 			this.btnHeaderLastweekValue4.Size = new System.Drawing.Size(159, 23);
 			this.btnHeaderLastweekValue4.TabIndex = 9;
 			this.btnHeaderLastweekValue4.TabStop = false;
-			this.btnHeaderLastweekValue4.Text = "Last week 50,00%";
+			this.btnHeaderLastweekValue4.Text = "Tuần trước 0";
 			this.btnHeaderLastweekValue4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
 			this.btnHeaderLastweekValue4.UseVisualStyleBackColor = false;
 			// 
@@ -347,9 +347,9 @@
 			this.lbHeaderBoxValue3.Margin = new System.Windows.Forms.Padding(3, 12, 3, 3);
 			this.lbHeaderBoxValue3.Name = "lbHeaderBoxValue3";
 			this.lbHeaderBoxValue3.Padding = new System.Windows.Forms.Padding(0, 0, 20, 0);
-			this.lbHeaderBoxValue3.Size = new System.Drawing.Size(111, 31);
+			this.lbHeaderBoxValue3.Size = new System.Drawing.Size(48, 31);
 			this.lbHeaderBoxValue3.TabIndex = 2;
-			this.lbHeaderBoxValue3.Text = "38,085";
+			this.lbHeaderBoxValue3.Text = "0";
 			// 
 			// pnlHeaderBoxPercent3
 			// 
@@ -361,10 +361,10 @@
 			this.pnlHeaderBoxPercent3.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(251)))), ((int)(((byte)(247)))));
 			this.pnlHeaderBoxPercent3.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(251)))), ((int)(((byte)(247)))));
 			this.pnlHeaderBoxPercent3.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(251)))), ((int)(((byte)(247)))));
-			this.pnlHeaderBoxPercent3.Location = new System.Drawing.Point(120, 16);
+			this.pnlHeaderBoxPercent3.Location = new System.Drawing.Point(57, 16);
 			this.pnlHeaderBoxPercent3.Margin = new System.Windows.Forms.Padding(3, 16, 3, 3);
 			this.pnlHeaderBoxPercent3.Name = "pnlHeaderBoxPercent3";
-			this.pnlHeaderBoxPercent3.Size = new System.Drawing.Size(61, 22);
+			this.pnlHeaderBoxPercent3.Size = new System.Drawing.Size(37, 22);
 			this.pnlHeaderBoxPercent3.TabIndex = 1;
 			// 
 			// lbHeaderBoxPercent3
@@ -376,9 +376,9 @@
 			this.lbHeaderBoxPercent3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(220)))), ((int)(((byte)(190)))));
 			this.lbHeaderBoxPercent3.Location = new System.Drawing.Point(3, 3);
 			this.lbHeaderBoxPercent3.Name = "lbHeaderBoxPercent3";
-			this.lbHeaderBoxPercent3.Size = new System.Drawing.Size(55, 19);
+			this.lbHeaderBoxPercent3.Size = new System.Drawing.Size(31, 19);
 			this.lbHeaderBoxPercent3.TabIndex = 1;
-			this.lbHeaderBoxPercent3.Text = "+1,5%";
+			this.lbHeaderBoxPercent3.Text = "0%";
 			// 
 			// lbHeaderBoxTitle3
 			// 
@@ -412,7 +412,7 @@
 			this.btnHeaderLastweekValue3.Size = new System.Drawing.Size(159, 23);
 			this.btnHeaderLastweekValue3.TabIndex = 9;
 			this.btnHeaderLastweekValue3.TabStop = false;
-			this.btnHeaderLastweekValue3.Text = "Last week 37,894";
+			this.btnHeaderLastweekValue3.Text = "Tuần trước 0";
 			this.btnHeaderLastweekValue3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
 			this.btnHeaderLastweekValue3.UseVisualStyleBackColor = false;
 			// 
@@ -451,9 +451,9 @@
 			this.lbHeaderBoxValue2.Margin = new System.Windows.Forms.Padding(3, 12, 3, 3);
 			this.lbHeaderBoxValue2.Name = "lbHeaderBoxValue2";
 			this.lbHeaderBoxValue2.Padding = new System.Windows.Forms.Padding(0, 0, 20, 0);
-			this.lbHeaderBoxValue2.Size = new System.Drawing.Size(111, 31);
+			this.lbHeaderBoxValue2.Size = new System.Drawing.Size(48, 31);
 			this.lbHeaderBoxValue2.TabIndex = 2;
-			this.lbHeaderBoxValue2.Text = "74,137";
+			this.lbHeaderBoxValue2.Text = "0";
 			// 
 			// pnlHeaderBoxPercent2
 			// 
@@ -465,10 +465,10 @@
 			this.pnlHeaderBoxPercent2.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
 			this.pnlHeaderBoxPercent2.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
 			this.pnlHeaderBoxPercent2.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-			this.pnlHeaderBoxPercent2.Location = new System.Drawing.Point(120, 16);
+			this.pnlHeaderBoxPercent2.Location = new System.Drawing.Point(57, 16);
 			this.pnlHeaderBoxPercent2.Margin = new System.Windows.Forms.Padding(3, 16, 3, 3);
 			this.pnlHeaderBoxPercent2.Name = "pnlHeaderBoxPercent2";
-			this.pnlHeaderBoxPercent2.Size = new System.Drawing.Size(56, 22);
+			this.pnlHeaderBoxPercent2.Size = new System.Drawing.Size(37, 22);
 			this.pnlHeaderBoxPercent2.TabIndex = 1;
 			// 
 			// lbHeaderBoxPercent2
@@ -480,9 +480,9 @@
 			this.lbHeaderBoxPercent2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(61)))), ((int)(((byte)(61)))));
 			this.lbHeaderBoxPercent2.Location = new System.Drawing.Point(3, 3);
 			this.lbHeaderBoxPercent2.Name = "lbHeaderBoxPercent2";
-			this.lbHeaderBoxPercent2.Size = new System.Drawing.Size(50, 19);
+			this.lbHeaderBoxPercent2.Size = new System.Drawing.Size(31, 19);
 			this.lbHeaderBoxPercent2.TabIndex = 1;
-			this.lbHeaderBoxPercent2.Text = "-3,5%";
+			this.lbHeaderBoxPercent2.Text = "0%";
 			// 
 			// lbHeaderBoxTitle2
 			// 
@@ -516,7 +516,7 @@
 			this.btnHeaderLastweekValue2.Size = new System.Drawing.Size(159, 23);
 			this.btnHeaderLastweekValue2.TabIndex = 9;
 			this.btnHeaderLastweekValue2.TabStop = false;
-			this.btnHeaderLastweekValue2.Text = "Last week 84, 709";
+			this.btnHeaderLastweekValue2.Text = "Tuần trước 0";
 			this.btnHeaderLastweekValue2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
 			this.btnHeaderLastweekValue2.UseVisualStyleBackColor = false;
 			// 
@@ -556,9 +556,9 @@
 			this.lbHeaderBoxValue1.Margin = new System.Windows.Forms.Padding(3, 12, 3, 3);
 			this.lbHeaderBoxValue1.Name = "lbHeaderBoxValue1";
 			this.lbHeaderBoxValue1.Padding = new System.Windows.Forms.Padding(0, 0, 20, 0);
-			this.lbHeaderBoxValue1.Size = new System.Drawing.Size(111, 31);
+			this.lbHeaderBoxValue1.Size = new System.Drawing.Size(48, 31);
 			this.lbHeaderBoxValue1.TabIndex = 2;
-			this.lbHeaderBoxValue1.Text = "57,440";
+			this.lbHeaderBoxValue1.Text = "0";
 			// 
 			// pnlHeaderBoxPercent1
 			// 
@@ -570,10 +570,10 @@
 			this.pnlHeaderBoxPercent1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(251)))), ((int)(((byte)(247)))));
 			this.pnlHeaderBoxPercent1.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(251)))), ((int)(((byte)(247)))));
 			this.pnlHeaderBoxPercent1.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(251)))), ((int)(((byte)(247)))));
-			this.pnlHeaderBoxPercent1.Location = new System.Drawing.Point(120, 16);
+			this.pnlHeaderBoxPercent1.Location = new System.Drawing.Point(57, 16);
 			this.pnlHeaderBoxPercent1.Margin = new System.Windows.Forms.Padding(3, 16, 3, 3);
 			this.pnlHeaderBoxPercent1.Name = "pnlHeaderBoxPercent1";
-			this.pnlHeaderBoxPercent1.Size = new System.Drawing.Size(70, 22);
+			this.pnlHeaderBoxPercent1.Size = new System.Drawing.Size(37, 22);
 			this.pnlHeaderBoxPercent1.TabIndex = 1;
 			// 
 			// lbHeaderBoxPercent1
@@ -585,9 +585,9 @@
 			this.lbHeaderBoxPercent1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(220)))), ((int)(((byte)(190)))));
 			this.lbHeaderBoxPercent1.Location = new System.Drawing.Point(3, 3);
 			this.lbHeaderBoxPercent1.Name = "lbHeaderBoxPercent1";
-			this.lbHeaderBoxPercent1.Size = new System.Drawing.Size(64, 19);
+			this.lbHeaderBoxPercent1.Size = new System.Drawing.Size(31, 19);
 			this.lbHeaderBoxPercent1.TabIndex = 1;
-			this.lbHeaderBoxPercent1.Text = "+13,5%";
+			this.lbHeaderBoxPercent1.Text = "0%";
 			// 
 			// lbHeaderBoxTitle1
 			// 
@@ -621,7 +621,7 @@
 			this.btnHeaderLastweekValue1.Size = new System.Drawing.Size(159, 23);
 			this.btnHeaderLastweekValue1.TabIndex = 6;
 			this.btnHeaderLastweekValue1.TabStop = false;
-			this.btnHeaderLastweekValue1.Text = "Last week 44,700";
+			this.btnHeaderLastweekValue1.Text = "Tuần trước 0";
 			this.btnHeaderLastweekValue1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
 			this.btnHeaderLastweekValue1.UseVisualStyleBackColor = false;
 			// 
@@ -776,13 +776,13 @@
 			this.lbBodyClassifyMark1.Name = "lbBodyClassifyMark1";
 			this.lbBodyClassifyMark1.Size = new System.Drawing.Size(194, 19);
 			this.lbBodyClassifyMark1.TabIndex = 11;
-			this.lbBodyClassifyMark1.Text = "256 pcs";
+			this.lbBodyClassifyMark1.Text = "0 pcs";
 			this.lbBodyClassifyMark1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
 			// lbBodyClassifyTitle1
 			// 
 			this.lbBodyClassifyTitle1.BackColor = System.Drawing.Color.Transparent;
-			this.lbBodyClassifyTitle1.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
+			this.lbBodyClassifyTitle1.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lbBodyClassifyTitle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(11)))), ((int)(((byte)(85)))));
 			this.lbBodyClassifyTitle1.Location = new System.Drawing.Point(3, 91);
 			this.lbBodyClassifyTitle1.Margin = new System.Windows.Forms.Padding(3, 10, 3, 5);
@@ -858,13 +858,13 @@
 			this.lbBodyClassifyMark2.Name = "lbBodyClassifyMark2";
 			this.lbBodyClassifyMark2.Size = new System.Drawing.Size(194, 19);
 			this.lbBodyClassifyMark2.TabIndex = 12;
-			this.lbBodyClassifyMark2.Text = "256 pcs";
+			this.lbBodyClassifyMark2.Text = "0 pcs";
 			this.lbBodyClassifyMark2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
 			// lbBodyClassifyTitle2
 			// 
 			this.lbBodyClassifyTitle2.BackColor = System.Drawing.Color.Transparent;
-			this.lbBodyClassifyTitle2.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
+			this.lbBodyClassifyTitle2.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lbBodyClassifyTitle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(11)))), ((int)(((byte)(85)))));
 			this.lbBodyClassifyTitle2.Location = new System.Drawing.Point(3, 91);
 			this.lbBodyClassifyTitle2.Margin = new System.Windows.Forms.Padding(3, 10, 3, 5);
@@ -940,13 +940,13 @@
 			this.lbBodyClassifyMark3.Name = "lbBodyClassifyMark3";
 			this.lbBodyClassifyMark3.Size = new System.Drawing.Size(194, 19);
 			this.lbBodyClassifyMark3.TabIndex = 13;
-			this.lbBodyClassifyMark3.Text = "256 pcs";
+			this.lbBodyClassifyMark3.Text = "0 pcs";
 			this.lbBodyClassifyMark3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
 			// lbBodyClassifyTitle3
 			// 
 			this.lbBodyClassifyTitle3.BackColor = System.Drawing.Color.Transparent;
-			this.lbBodyClassifyTitle3.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
+			this.lbBodyClassifyTitle3.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.lbBodyClassifyTitle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(11)))), ((int)(((byte)(85)))));
 			this.lbBodyClassifyTitle3.Location = new System.Drawing.Point(3, 91);
 			this.lbBodyClassifyTitle3.Margin = new System.Windows.Forms.Padding(3, 10, 3, 5);
@@ -1074,7 +1074,7 @@
 			this.lbBTP1DateText.Name = "lbBTP1DateText";
 			this.lbBTP1DateText.Size = new System.Drawing.Size(58, 20);
 			this.lbBTP1DateText.TabIndex = 12;
-			this.lbBTP1DateText.Text = "Mon";
+			this.lbBTP1DateText.Text = "Unk";
 			this.lbBTP1DateText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
 			// lbBTP1DateValue
@@ -1087,7 +1087,7 @@
 			this.lbBTP1DateValue.Name = "lbBTP1DateValue";
 			this.lbBTP1DateValue.Size = new System.Drawing.Size(58, 36);
 			this.lbBTP1DateValue.TabIndex = 11;
-			this.lbBTP1DateValue.Text = "25";
+			this.lbBTP1DateValue.Text = "0";
 			this.lbBTP1DateValue.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
 			// 
 			// flpBTP1Details
@@ -1112,9 +1112,9 @@
 			this.lbBTP1DetailTitle.Location = new System.Drawing.Point(3, 10);
 			this.lbBTP1DetailTitle.Margin = new System.Windows.Forms.Padding(3, 10, 3, 5);
 			this.lbBTP1DetailTitle.Name = "lbBTP1DetailTitle";
-			this.lbBTP1DetailTitle.Size = new System.Drawing.Size(135, 19);
+			this.lbBTP1DetailTitle.Size = new System.Drawing.Size(18, 19);
 			this.lbBTP1DetailTitle.TabIndex = 9;
-			this.lbBTP1DetailTitle.Text = "84282649272154";
+			this.lbBTP1DetailTitle.Text = "0";
 			// 
 			// flpBTP1DetailPrice
 			// 
@@ -1136,16 +1136,16 @@
 			this.lbBTP1PriceCost.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(67)))), ((int)(((byte)(69)))));
 			this.lbBTP1PriceCost.Location = new System.Drawing.Point(3, 0);
 			this.lbBTP1PriceCost.Name = "lbBTP1PriceCost";
-			this.lbBTP1PriceCost.Size = new System.Drawing.Size(77, 20);
+			this.lbBTP1PriceCost.Size = new System.Drawing.Size(105, 20);
 			this.lbBTP1PriceCost.TabIndex = 10;
-			this.lbBTP1PriceCost.Text = "Cost: 156$";
+			this.lbBTP1PriceCost.Text = "Thành tiền: 0$";
 			// 
 			// lbBTP1PriceDot
 			// 
 			this.lbBTP1PriceDot.AutoSize = true;
 			this.lbBTP1PriceDot.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Bold);
 			this.lbBTP1PriceDot.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(11)))), ((int)(((byte)(85)))));
-			this.lbBTP1PriceDot.Location = new System.Drawing.Point(86, 0);
+			this.lbBTP1PriceDot.Location = new System.Drawing.Point(114, 0);
 			this.lbBTP1PriceDot.Name = "lbBTP1PriceDot";
 			this.lbBTP1PriceDot.Size = new System.Drawing.Size(15, 19);
 			this.lbBTP1PriceDot.TabIndex = 11;
@@ -1156,11 +1156,11 @@
 			this.lbBTP1PriceTime.AutoSize = true;
 			this.lbBTP1PriceTime.Font = new System.Drawing.Font("Microsoft YaHei", 10F);
 			this.lbBTP1PriceTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(11)))), ((int)(((byte)(85)))));
-			this.lbBTP1PriceTime.Location = new System.Drawing.Point(107, 0);
+			this.lbBTP1PriceTime.Location = new System.Drawing.Point(135, 0);
 			this.lbBTP1PriceTime.Name = "lbBTP1PriceTime";
-			this.lbBTP1PriceTime.Size = new System.Drawing.Size(70, 20);
+			this.lbBTP1PriceTime.Size = new System.Drawing.Size(36, 20);
 			this.lbBTP1PriceTime.TabIndex = 12;
-			this.lbBTP1PriceTime.Text = "13:47 pm";
+			this.lbBTP1PriceTime.Text = "Unk";
 			// 
 			// btnBTP1DetailsLink
 			// 
@@ -1182,6 +1182,7 @@
 			this.btnBTP1DetailsLink.TabIndex = 14;
 			this.btnBTP1DetailsLink.TabStop = false;
 			this.btnBTP1DetailsLink.UseVisualStyleBackColor = false;
+			this.btnBTP1DetailsLink.Click += new System.EventHandler(this.btnBTP1DetailsLink_Click);
 			// 
 			// flpBodyTransactionP2
 			// 
@@ -1234,7 +1235,7 @@
 			this.lbBTP2DateText.Name = "lbBTP2DateText";
 			this.lbBTP2DateText.Size = new System.Drawing.Size(58, 20);
 			this.lbBTP2DateText.TabIndex = 14;
-			this.lbBTP2DateText.Text = "Fri";
+			this.lbBTP2DateText.Text = "Unk";
 			this.lbBTP2DateText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
 			// lbBTP2DateValue
@@ -1247,7 +1248,7 @@
 			this.lbBTP2DateValue.Name = "lbBTP2DateValue";
 			this.lbBTP2DateValue.Size = new System.Drawing.Size(58, 36);
 			this.lbBTP2DateValue.TabIndex = 13;
-			this.lbBTP2DateValue.Text = "28";
+			this.lbBTP2DateValue.Text = "0";
 			this.lbBTP2DateValue.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
 			// 
 			// flpBTP2Details
@@ -1272,9 +1273,9 @@
 			this.lbBTP2DetailTitle.Location = new System.Drawing.Point(3, 10);
 			this.lbBTP2DetailTitle.Margin = new System.Windows.Forms.Padding(3, 10, 3, 5);
 			this.lbBTP2DetailTitle.Name = "lbBTP2DetailTitle";
-			this.lbBTP2DetailTitle.Size = new System.Drawing.Size(135, 19);
+			this.lbBTP2DetailTitle.Size = new System.Drawing.Size(18, 19);
 			this.lbBTP2DetailTitle.TabIndex = 9;
-			this.lbBTP2DetailTitle.Text = "84282649272155";
+			this.lbBTP2DetailTitle.Text = "0";
 			// 
 			// flpBTP2DetailPrice
 			// 
@@ -1296,16 +1297,16 @@
 			this.lbBTP2PriceCost.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(67)))), ((int)(((byte)(69)))));
 			this.lbBTP2PriceCost.Location = new System.Drawing.Point(3, 0);
 			this.lbBTP2PriceCost.Name = "lbBTP2PriceCost";
-			this.lbBTP2PriceCost.Size = new System.Drawing.Size(77, 20);
+			this.lbBTP2PriceCost.Size = new System.Drawing.Size(105, 20);
 			this.lbBTP2PriceCost.TabIndex = 10;
-			this.lbBTP2PriceCost.Text = "Cost: 373$";
+			this.lbBTP2PriceCost.Text = "Thành tiền: 0$";
 			// 
 			// lbBTP2PriceDot
 			// 
 			this.lbBTP2PriceDot.AutoSize = true;
 			this.lbBTP2PriceDot.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Bold);
 			this.lbBTP2PriceDot.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(11)))), ((int)(((byte)(85)))));
-			this.lbBTP2PriceDot.Location = new System.Drawing.Point(86, 0);
+			this.lbBTP2PriceDot.Location = new System.Drawing.Point(114, 0);
 			this.lbBTP2PriceDot.Name = "lbBTP2PriceDot";
 			this.lbBTP2PriceDot.Size = new System.Drawing.Size(15, 19);
 			this.lbBTP2PriceDot.TabIndex = 11;
@@ -1316,11 +1317,11 @@
 			this.lbBTP2PriceTime.AutoSize = true;
 			this.lbBTP2PriceTime.Font = new System.Drawing.Font("Microsoft YaHei", 10F);
 			this.lbBTP2PriceTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(11)))), ((int)(((byte)(85)))));
-			this.lbBTP2PriceTime.Location = new System.Drawing.Point(107, 0);
+			this.lbBTP2PriceTime.Location = new System.Drawing.Point(135, 0);
 			this.lbBTP2PriceTime.Name = "lbBTP2PriceTime";
-			this.lbBTP2PriceTime.Size = new System.Drawing.Size(69, 20);
+			this.lbBTP2PriceTime.Size = new System.Drawing.Size(36, 20);
 			this.lbBTP2PriceTime.TabIndex = 12;
-			this.lbBTP2PriceTime.Text = "10:14 am";
+			this.lbBTP2PriceTime.Text = "Unk";
 			// 
 			// btnBTP2DetailsLink
 			// 
@@ -1342,6 +1343,7 @@
 			this.btnBTP2DetailsLink.TabIndex = 14;
 			this.btnBTP2DetailsLink.TabStop = false;
 			this.btnBTP2DetailsLink.UseVisualStyleBackColor = false;
+			this.btnBTP2DetailsLink.Click += new System.EventHandler(this.btnBTP2DetailsLink_Click);
 			// 
 			// lbBodyTransactionTitle
 			// 
@@ -1416,9 +1418,9 @@
 			this.flpbtnBSIWp1.Controls.Add(this.lbBSIWp1Value);
 			this.flpbtnBSIWp1.Controls.Add(this.lbBSIWp1Mark);
 			this.flpbtnBSIWp1.Dock = System.Windows.Forms.DockStyle.Right;
-			this.flpbtnBSIWp1.Location = new System.Drawing.Point(361, 0);
+			this.flpbtnBSIWp1.Location = new System.Drawing.Point(363, 0);
 			this.flpbtnBSIWp1.Name = "flpbtnBSIWp1";
-			this.flpbtnBSIWp1.Size = new System.Drawing.Size(33, 42);
+			this.flpbtnBSIWp1.Size = new System.Drawing.Size(31, 42);
 			this.flpbtnBSIWp1.TabIndex = 12;
 			// 
 			// lbBSIWp1Value
@@ -1429,9 +1431,9 @@
 			this.lbBSIWp1Value.Location = new System.Drawing.Point(0, 0);
 			this.lbBSIWp1Value.Margin = new System.Windows.Forms.Padding(0);
 			this.lbBSIWp1Value.Name = "lbBSIWp1Value";
-			this.lbBSIWp1Value.Size = new System.Drawing.Size(33, 19);
+			this.lbBSIWp1Value.Size = new System.Drawing.Size(17, 19);
 			this.lbBSIWp1Value.TabIndex = 11;
-			this.lbBSIWp1Value.Text = "126";
+			this.lbBSIWp1Value.Text = "0";
 			// 
 			// lbBSIWp1Mark
 			// 
@@ -1502,9 +1504,9 @@
 			this.flpBSIWp2.Controls.Add(this.lbBSIWp2Value);
 			this.flpBSIWp2.Controls.Add(this.lbBSIWp2Mark);
 			this.flpBSIWp2.Dock = System.Windows.Forms.DockStyle.Right;
-			this.flpBSIWp2.Location = new System.Drawing.Point(361, 0);
+			this.flpBSIWp2.Location = new System.Drawing.Point(363, 0);
 			this.flpBSIWp2.Name = "flpBSIWp2";
-			this.flpBSIWp2.Size = new System.Drawing.Size(33, 42);
+			this.flpBSIWp2.Size = new System.Drawing.Size(31, 42);
 			this.flpBSIWp2.TabIndex = 12;
 			// 
 			// lbBSIWp2Value
@@ -1515,9 +1517,9 @@
 			this.lbBSIWp2Value.Location = new System.Drawing.Point(0, 0);
 			this.lbBSIWp2Value.Margin = new System.Windows.Forms.Padding(0);
 			this.lbBSIWp2Value.Name = "lbBSIWp2Value";
-			this.lbBSIWp2Value.Size = new System.Drawing.Size(33, 19);
+			this.lbBSIWp2Value.Size = new System.Drawing.Size(17, 19);
 			this.lbBSIWp2Value.TabIndex = 11;
-			this.lbBSIWp2Value.Text = "295";
+			this.lbBSIWp2Value.Text = "0";
 			// 
 			// lbBSIWp2Mark
 			// 
@@ -1601,9 +1603,9 @@
 			this.lbBSIWp3Value.Location = new System.Drawing.Point(0, 0);
 			this.lbBSIWp3Value.Margin = new System.Windows.Forms.Padding(0);
 			this.lbBSIWp3Value.Name = "lbBSIWp3Value";
-			this.lbBSIWp3Value.Size = new System.Drawing.Size(25, 19);
+			this.lbBSIWp3Value.Size = new System.Drawing.Size(17, 19);
 			this.lbBSIWp3Value.TabIndex = 11;
-			this.lbBSIWp3Value.Text = "45";
+			this.lbBSIWp3Value.Text = "0";
 			// 
 			// lbBSIWp3Mark
 			// 
@@ -1674,9 +1676,9 @@
 			this.flpBSIWp4.Controls.Add(this.lbBSIWp4Value);
 			this.flpBSIWp4.Controls.Add(this.lbBSIWp4Mark);
 			this.flpBSIWp4.Dock = System.Windows.Forms.DockStyle.Right;
-			this.flpBSIWp4.Location = new System.Drawing.Point(361, 0);
+			this.flpBSIWp4.Location = new System.Drawing.Point(363, 0);
 			this.flpBSIWp4.Name = "flpBSIWp4";
-			this.flpBSIWp4.Size = new System.Drawing.Size(33, 42);
+			this.flpBSIWp4.Size = new System.Drawing.Size(31, 42);
 			this.flpBSIWp4.TabIndex = 12;
 			// 
 			// lbBSIWp4Value
@@ -1687,9 +1689,9 @@
 			this.lbBSIWp4Value.Location = new System.Drawing.Point(0, 0);
 			this.lbBSIWp4Value.Margin = new System.Windows.Forms.Padding(0);
 			this.lbBSIWp4Value.Name = "lbBSIWp4Value";
-			this.lbBSIWp4Value.Size = new System.Drawing.Size(33, 19);
+			this.lbBSIWp4Value.Size = new System.Drawing.Size(17, 19);
 			this.lbBSIWp4Value.TabIndex = 11;
-			this.lbBSIWp4Value.Text = "953";
+			this.lbBSIWp4Value.Text = "0";
 			// 
 			// lbBSIWp4Mark
 			// 
