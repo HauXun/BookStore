@@ -41,8 +41,14 @@
 			this.lbAppTitle = new System.Windows.Forms.Label();
 			this.pnlNavigation = new Guna.UI2.WinForms.Guna2ShadowPanel();
 			this.pnlMenu = new System.Windows.Forms.FlowLayoutPanel();
+			this.btnBill = new FontAwesome.Sharp.IconButton();
+			this.btnSalesBill = new FontAwesome.Sharp.IconButton();
+			this.pnlAdminControl = new System.Windows.Forms.Panel();
 			this.btnProduct = new FontAwesome.Sharp.IconButton();
-			this.btnCreateBill = new FontAwesome.Sharp.IconButton();
+			this.btnAccount = new FontAwesome.Sharp.IconButton();
+			this.btnInsight = new FontAwesome.Sharp.IconButton();
+			this.btnAnalysis = new FontAwesome.Sharp.IconButton();
+			this.btnImportBill = new FontAwesome.Sharp.IconButton();
 			this.pnlTool = new System.Windows.Forms.Panel();
 			this.flpTool = new System.Windows.Forms.FlowLayoutPanel();
 			this.btnHelp = new FontAwesome.Sharp.IconButton();
@@ -53,19 +59,17 @@
 			this.pbLogo = new System.Windows.Forms.PictureBox();
 			this.bP = new Bunifu.UI.WinForms.BunifuPages();
 			this.tPInsight = new System.Windows.Forms.TabPage();
+			this.tPBill = new System.Windows.Forms.TabPage();
 			this.tPAnalysis = new System.Windows.Forms.TabPage();
 			this.tPProduct = new System.Windows.Forms.TabPage();
 			this.pnlForm = new Guna.UI2.WinForms.Guna2ShadowPanel();
-			this.pnlAdminControl = new System.Windows.Forms.Panel();
-			this.btnStaff = new FontAwesome.Sharp.IconButton();
-			this.btnInsight = new FontAwesome.Sharp.IconButton();
-			this.btnAnalysis = new FontAwesome.Sharp.IconButton();
 			this.pnlControlBox.SuspendLayout();
 			this.paneBottomLineTitleBar.SuspendLayout();
 			this.pnlAppTile.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.pbAppIcon)).BeginInit();
 			this.pnlNavigation.SuspendLayout();
 			this.pnlMenu.SuspendLayout();
+			this.pnlAdminControl.SuspendLayout();
 			this.pnlTool.SuspendLayout();
 			this.flpTool.SuspendLayout();
 			this.pnlUserInfo.SuspendLayout();
@@ -73,7 +77,6 @@
 			((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
 			this.bP.SuspendLayout();
 			this.pnlForm.SuspendLayout();
-			this.pnlAdminControl.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// pnlControlBox
@@ -218,8 +221,8 @@
 			// pnlMenu
 			// 
 			this.pnlMenu.BackColor = System.Drawing.Color.White;
-			this.pnlMenu.Controls.Add(this.btnProduct);
-			this.pnlMenu.Controls.Add(this.btnCreateBill);
+			this.pnlMenu.Controls.Add(this.btnBill);
+			this.pnlMenu.Controls.Add(this.btnSalesBill);
 			this.pnlMenu.Controls.Add(this.pnlAdminControl);
 			this.pnlMenu.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.pnlMenu.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
@@ -227,6 +230,71 @@
 			this.pnlMenu.Name = "pnlMenu";
 			this.pnlMenu.Size = new System.Drawing.Size(220, 577);
 			this.pnlMenu.TabIndex = 0;
+			// 
+			// btnBill
+			// 
+			this.btnBill.BackColor = System.Drawing.Color.Transparent;
+			this.btnBill.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnBill.FlatAppearance.BorderSize = 0;
+			this.btnBill.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnBill.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+			this.btnBill.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(67)))), ((int)(((byte)(69)))));
+			this.btnBill.IconChar = FontAwesome.Sharp.IconChar.FileInvoice;
+			this.btnBill.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(67)))), ((int)(((byte)(69)))));
+			this.btnBill.IconFont = FontAwesome.Sharp.IconFont.Auto;
+			this.btnBill.IconSize = 25;
+			this.btnBill.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.btnBill.Location = new System.Drawing.Point(3, 0);
+			this.btnBill.Margin = new System.Windows.Forms.Padding(3, 0, 3, 10);
+			this.btnBill.Name = "btnBill";
+			this.btnBill.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+			this.btnBill.Size = new System.Drawing.Size(214, 40);
+			this.btnBill.TabIndex = 5;
+			this.btnBill.TabStop = false;
+			this.btnBill.Text = "Hóa đơn";
+			this.btnBill.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.btnBill.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.btnBill.UseVisualStyleBackColor = false;
+			this.btnBill.Click += new System.EventHandler(this.btnBill_Click);
+			// 
+			// btnSalesBill
+			// 
+			this.btnSalesBill.BackColor = System.Drawing.Color.Transparent;
+			this.btnSalesBill.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnSalesBill.FlatAppearance.BorderSize = 0;
+			this.btnSalesBill.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnSalesBill.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+			this.btnSalesBill.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(67)))), ((int)(((byte)(69)))));
+			this.btnSalesBill.IconChar = FontAwesome.Sharp.IconChar.FileInvoiceDollar;
+			this.btnSalesBill.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(67)))), ((int)(((byte)(69)))));
+			this.btnSalesBill.IconFont = FontAwesome.Sharp.IconFont.Auto;
+			this.btnSalesBill.IconSize = 25;
+			this.btnSalesBill.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.btnSalesBill.Location = new System.Drawing.Point(3, 50);
+			this.btnSalesBill.Margin = new System.Windows.Forms.Padding(3, 0, 3, 10);
+			this.btnSalesBill.Name = "btnSalesBill";
+			this.btnSalesBill.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+			this.btnSalesBill.Size = new System.Drawing.Size(214, 40);
+			this.btnSalesBill.TabIndex = 3;
+			this.btnSalesBill.TabStop = false;
+			this.btnSalesBill.Text = "Tạo hóa đơn bán";
+			this.btnSalesBill.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.btnSalesBill.UseVisualStyleBackColor = false;
+			this.btnSalesBill.Click += new System.EventHandler(this.btnSalesBill_Click);
+			// 
+			// pnlAdminControl
+			// 
+			this.pnlAdminControl.AutoSize = true;
+			this.pnlAdminControl.Controls.Add(this.btnProduct);
+			this.pnlAdminControl.Controls.Add(this.btnAccount);
+			this.pnlAdminControl.Controls.Add(this.btnInsight);
+			this.pnlAdminControl.Controls.Add(this.btnAnalysis);
+			this.pnlAdminControl.Controls.Add(this.btnImportBill);
+			this.pnlAdminControl.Location = new System.Drawing.Point(0, 100);
+			this.pnlAdminControl.Margin = new System.Windows.Forms.Padding(0);
+			this.pnlAdminControl.Name = "pnlAdminControl";
+			this.pnlAdminControl.Size = new System.Drawing.Size(220, 240);
+			this.pnlAdminControl.TabIndex = 4;
 			// 
 			// btnProduct
 			// 
@@ -241,42 +309,118 @@
 			this.btnProduct.IconFont = FontAwesome.Sharp.IconFont.Auto;
 			this.btnProduct.IconSize = 25;
 			this.btnProduct.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.btnProduct.Location = new System.Drawing.Point(3, 0);
+			this.btnProduct.Location = new System.Drawing.Point(3, 150);
 			this.btnProduct.Margin = new System.Windows.Forms.Padding(3, 0, 3, 10);
 			this.btnProduct.Name = "btnProduct";
 			this.btnProduct.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
 			this.btnProduct.Size = new System.Drawing.Size(214, 40);
-			this.btnProduct.TabIndex = 2;
+			this.btnProduct.TabIndex = 11;
 			this.btnProduct.TabStop = false;
-			this.btnProduct.Text = "Product";
+			this.btnProduct.Text = "Hàng hóa";
 			this.btnProduct.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.btnProduct.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
 			this.btnProduct.UseVisualStyleBackColor = false;
 			this.btnProduct.Click += new System.EventHandler(this.btnProduct_Click);
 			// 
-			// btnCreateBill
+			// btnAccount
 			// 
-			this.btnCreateBill.BackColor = System.Drawing.Color.Transparent;
-			this.btnCreateBill.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnCreateBill.FlatAppearance.BorderSize = 0;
-			this.btnCreateBill.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.btnCreateBill.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-			this.btnCreateBill.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(67)))), ((int)(((byte)(69)))));
-			this.btnCreateBill.IconChar = FontAwesome.Sharp.IconChar.FileInvoiceDollar;
-			this.btnCreateBill.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(67)))), ((int)(((byte)(69)))));
-			this.btnCreateBill.IconFont = FontAwesome.Sharp.IconFont.Auto;
-			this.btnCreateBill.IconSize = 25;
-			this.btnCreateBill.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.btnCreateBill.Location = new System.Drawing.Point(3, 60);
-			this.btnCreateBill.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
-			this.btnCreateBill.Name = "btnCreateBill";
-			this.btnCreateBill.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-			this.btnCreateBill.Size = new System.Drawing.Size(214, 40);
-			this.btnCreateBill.TabIndex = 3;
-			this.btnCreateBill.TabStop = false;
-			this.btnCreateBill.Text = "Create Bill";
-			this.btnCreateBill.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.btnCreateBill.UseVisualStyleBackColor = false;
+			this.btnAccount.BackColor = System.Drawing.Color.Transparent;
+			this.btnAccount.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnAccount.FlatAppearance.BorderSize = 0;
+			this.btnAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnAccount.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+			this.btnAccount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(67)))), ((int)(((byte)(69)))));
+			this.btnAccount.IconChar = FontAwesome.Sharp.IconChar.Users;
+			this.btnAccount.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(67)))), ((int)(((byte)(69)))));
+			this.btnAccount.IconFont = FontAwesome.Sharp.IconFont.Auto;
+			this.btnAccount.IconSize = 25;
+			this.btnAccount.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.btnAccount.Location = new System.Drawing.Point(3, 50);
+			this.btnAccount.Margin = new System.Windows.Forms.Padding(3, 0, 3, 10);
+			this.btnAccount.Name = "btnAccount";
+			this.btnAccount.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+			this.btnAccount.Size = new System.Drawing.Size(214, 40);
+			this.btnAccount.TabIndex = 12;
+			this.btnAccount.TabStop = false;
+			this.btnAccount.Text = "Tài khoản";
+			this.btnAccount.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.btnAccount.UseVisualStyleBackColor = false;
+			this.btnAccount.Click += new System.EventHandler(this.btnAccount_Click);
+			// 
+			// btnInsight
+			// 
+			this.btnInsight.BackColor = System.Drawing.Color.Transparent;
+			this.btnInsight.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnInsight.FlatAppearance.BorderSize = 0;
+			this.btnInsight.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnInsight.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+			this.btnInsight.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(67)))), ((int)(((byte)(69)))));
+			this.btnInsight.IconChar = FontAwesome.Sharp.IconChar.ChartPie;
+			this.btnInsight.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(67)))), ((int)(((byte)(69)))));
+			this.btnInsight.IconFont = FontAwesome.Sharp.IconFont.Auto;
+			this.btnInsight.IconSize = 25;
+			this.btnInsight.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.btnInsight.Location = new System.Drawing.Point(3, 100);
+			this.btnInsight.Margin = new System.Windows.Forms.Padding(3, 0, 3, 10);
+			this.btnInsight.Name = "btnInsight";
+			this.btnInsight.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+			this.btnInsight.Size = new System.Drawing.Size(214, 40);
+			this.btnInsight.TabIndex = 13;
+			this.btnInsight.TabStop = false;
+			this.btnInsight.Text = "Tổng quan";
+			this.btnInsight.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.btnInsight.UseVisualStyleBackColor = false;
+			this.btnInsight.Click += new System.EventHandler(this.btnInsight_Click);
+			// 
+			// btnAnalysis
+			// 
+			this.btnAnalysis.BackColor = System.Drawing.Color.Transparent;
+			this.btnAnalysis.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnAnalysis.FlatAppearance.BorderSize = 0;
+			this.btnAnalysis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnAnalysis.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+			this.btnAnalysis.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(67)))), ((int)(((byte)(69)))));
+			this.btnAnalysis.IconChar = FontAwesome.Sharp.IconChar.ChartBar;
+			this.btnAnalysis.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(67)))), ((int)(((byte)(69)))));
+			this.btnAnalysis.IconFont = FontAwesome.Sharp.IconFont.Auto;
+			this.btnAnalysis.IconSize = 25;
+			this.btnAnalysis.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.btnAnalysis.Location = new System.Drawing.Point(3, 200);
+			this.btnAnalysis.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
+			this.btnAnalysis.Name = "btnAnalysis";
+			this.btnAnalysis.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+			this.btnAnalysis.Size = new System.Drawing.Size(214, 40);
+			this.btnAnalysis.TabIndex = 14;
+			this.btnAnalysis.TabStop = false;
+			this.btnAnalysis.Text = "Thống kê";
+			this.btnAnalysis.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.btnAnalysis.UseVisualStyleBackColor = false;
+			this.btnAnalysis.Click += new System.EventHandler(this.btnAnalysis_Click);
+			// 
+			// btnImportBill
+			// 
+			this.btnImportBill.BackColor = System.Drawing.Color.Transparent;
+			this.btnImportBill.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnImportBill.FlatAppearance.BorderSize = 0;
+			this.btnImportBill.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnImportBill.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+			this.btnImportBill.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(67)))), ((int)(((byte)(69)))));
+			this.btnImportBill.IconChar = FontAwesome.Sharp.IconChar.FileInvoiceDollar;
+			this.btnImportBill.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(67)))), ((int)(((byte)(69)))));
+			this.btnImportBill.IconFont = FontAwesome.Sharp.IconFont.Auto;
+			this.btnImportBill.IconSize = 25;
+			this.btnImportBill.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.btnImportBill.Location = new System.Drawing.Point(3, 0);
+			this.btnImportBill.Margin = new System.Windows.Forms.Padding(3, 0, 3, 10);
+			this.btnImportBill.Name = "btnImportBill";
+			this.btnImportBill.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+			this.btnImportBill.Size = new System.Drawing.Size(214, 40);
+			this.btnImportBill.TabIndex = 10;
+			this.btnImportBill.TabStop = false;
+			this.btnImportBill.Text = "Tạo hóa đơn nhập";
+			this.btnImportBill.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.btnImportBill.UseVisualStyleBackColor = false;
+			this.btnImportBill.Click += new System.EventHandler(this.btnImportBill_Click);
 			// 
 			// pnlTool
 			// 
@@ -403,6 +547,7 @@
 			this.bP.Alignment = System.Windows.Forms.TabAlignment.Bottom;
 			this.bP.AllowTransitions = false;
 			this.bP.Controls.Add(this.tPInsight);
+			this.bP.Controls.Add(this.tPBill);
 			this.bP.Controls.Add(this.tPAnalysis);
 			this.bP.Controls.Add(this.tPProduct);
 			this.bP.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -447,6 +592,14 @@
 			this.tPInsight.Size = new System.Drawing.Size(1306, 844);
 			this.tPInsight.TabIndex = 0;
 			// 
+			// tPBill
+			// 
+			this.tPBill.BackColor = System.Drawing.Color.White;
+			this.tPBill.Location = new System.Drawing.Point(4, 4);
+			this.tPBill.Name = "tPBill";
+			this.tPBill.Size = new System.Drawing.Size(1306, 844);
+			this.tPBill.TabIndex = 3;
+			// 
 			// tPAnalysis
 			// 
 			this.tPAnalysis.BackColor = System.Drawing.Color.White;
@@ -477,90 +630,6 @@
 			this.pnlForm.Size = new System.Drawing.Size(1314, 853);
 			this.pnlForm.TabIndex = 1;
 			// 
-			// pnlAdminControl
-			// 
-			this.pnlAdminControl.AutoSize = true;
-			this.pnlAdminControl.Controls.Add(this.btnStaff);
-			this.pnlAdminControl.Controls.Add(this.btnInsight);
-			this.pnlAdminControl.Controls.Add(this.btnAnalysis);
-			this.pnlAdminControl.Location = new System.Drawing.Point(0, 110);
-			this.pnlAdminControl.Margin = new System.Windows.Forms.Padding(0);
-			this.pnlAdminControl.Name = "pnlAdminControl";
-			this.pnlAdminControl.Size = new System.Drawing.Size(220, 160);
-			this.pnlAdminControl.TabIndex = 4;
-			// 
-			// btnStaff
-			// 
-			this.btnStaff.BackColor = System.Drawing.Color.Transparent;
-			this.btnStaff.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnStaff.FlatAppearance.BorderSize = 0;
-			this.btnStaff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.btnStaff.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-			this.btnStaff.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(67)))), ((int)(((byte)(69)))));
-			this.btnStaff.IconChar = FontAwesome.Sharp.IconChar.Users;
-			this.btnStaff.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(67)))), ((int)(((byte)(69)))));
-			this.btnStaff.IconFont = FontAwesome.Sharp.IconFont.Auto;
-			this.btnStaff.IconSize = 25;
-			this.btnStaff.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.btnStaff.Location = new System.Drawing.Point(3, 0);
-			this.btnStaff.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
-			this.btnStaff.Name = "btnStaff";
-			this.btnStaff.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-			this.btnStaff.Size = new System.Drawing.Size(214, 40);
-			this.btnStaff.TabIndex = 7;
-			this.btnStaff.TabStop = false;
-			this.btnStaff.Text = "Staff";
-			this.btnStaff.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.btnStaff.UseVisualStyleBackColor = false;
-			// 
-			// btnInsight
-			// 
-			this.btnInsight.BackColor = System.Drawing.Color.Transparent;
-			this.btnInsight.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnInsight.FlatAppearance.BorderSize = 0;
-			this.btnInsight.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.btnInsight.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-			this.btnInsight.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(67)))), ((int)(((byte)(69)))));
-			this.btnInsight.IconChar = FontAwesome.Sharp.IconChar.ChartPie;
-			this.btnInsight.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(67)))), ((int)(((byte)(69)))));
-			this.btnInsight.IconFont = FontAwesome.Sharp.IconFont.Auto;
-			this.btnInsight.IconSize = 25;
-			this.btnInsight.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.btnInsight.Location = new System.Drawing.Point(3, 60);
-			this.btnInsight.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
-			this.btnInsight.Name = "btnInsight";
-			this.btnInsight.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-			this.btnInsight.Size = new System.Drawing.Size(214, 40);
-			this.btnInsight.TabIndex = 8;
-			this.btnInsight.TabStop = false;
-			this.btnInsight.Text = "Insight";
-			this.btnInsight.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.btnInsight.UseVisualStyleBackColor = false;
-			// 
-			// btnAnalysis
-			// 
-			this.btnAnalysis.BackColor = System.Drawing.Color.Transparent;
-			this.btnAnalysis.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnAnalysis.FlatAppearance.BorderSize = 0;
-			this.btnAnalysis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.btnAnalysis.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-			this.btnAnalysis.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(67)))), ((int)(((byte)(69)))));
-			this.btnAnalysis.IconChar = FontAwesome.Sharp.IconChar.ChartBar;
-			this.btnAnalysis.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(67)))), ((int)(((byte)(69)))));
-			this.btnAnalysis.IconFont = FontAwesome.Sharp.IconFont.Auto;
-			this.btnAnalysis.IconSize = 25;
-			this.btnAnalysis.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.btnAnalysis.Location = new System.Drawing.Point(3, 120);
-			this.btnAnalysis.Margin = new System.Windows.Forms.Padding(3, 10, 3, 0);
-			this.btnAnalysis.Name = "btnAnalysis";
-			this.btnAnalysis.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-			this.btnAnalysis.Size = new System.Drawing.Size(214, 40);
-			this.btnAnalysis.TabIndex = 9;
-			this.btnAnalysis.TabStop = false;
-			this.btnAnalysis.Text = "Analysis";
-			this.btnAnalysis.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-			this.btnAnalysis.UseVisualStyleBackColor = false;
-			// 
 			// BookShop
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -572,12 +641,12 @@
 			this.Controls.Add(this.pnlNavigation);
 			this.Controls.Add(this.pnlControlBox);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.MaximumSize = new System.Drawing.Size(1920, 1080);
 			this.MinimumSize = new System.Drawing.Size(1280, 720);
 			this.Name = "BookShop";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Amazing Quiz Applicaiton";
-			this.Load += new System.EventHandler(this.BookStore_Load);
 			this.pnlControlBox.ResumeLayout(false);
 			this.paneBottomLineTitleBar.ResumeLayout(false);
 			this.pnlAppTile.ResumeLayout(false);
@@ -586,6 +655,7 @@
 			this.pnlNavigation.ResumeLayout(false);
 			this.pnlMenu.ResumeLayout(false);
 			this.pnlMenu.PerformLayout();
+			this.pnlAdminControl.ResumeLayout(false);
 			this.pnlTool.ResumeLayout(false);
 			this.flpTool.ResumeLayout(false);
 			this.pnlUserInfo.ResumeLayout(false);
@@ -594,7 +664,6 @@
 			((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
 			this.bP.ResumeLayout(false);
 			this.pnlForm.ResumeLayout(false);
-			this.pnlAdminControl.ResumeLayout(false);
 			this.ResumeLayout(false);
 
         }
@@ -615,12 +684,12 @@
 		private System.Windows.Forms.TabPage tPProduct;
 		private Pages.Insight insightUC;
 		private Pages.Product productUC;
+		private Pages.Bill billUC;
 		private Pages.Analysis analysisUC;
 		private System.Windows.Forms.Panel pnlUserInfo;
 		private System.Windows.Forms.Label usernameLabel;
 		private Guna.UI2.WinForms.Guna2CirclePictureBox avatarAccount;
-		private FontAwesome.Sharp.IconButton btnProduct;
-		private FontAwesome.Sharp.IconButton btnCreateBill;
+		private FontAwesome.Sharp.IconButton btnSalesBill;
 		private System.Windows.Forms.FlowLayoutPanel flpTool;
 		private FontAwesome.Sharp.IconButton btnHelp;
 		private FontAwesome.Sharp.IconButton btnSetting;
@@ -630,9 +699,13 @@
 		private Guna.UI2.WinForms.Guna2CircleButton btnMinimizeApp;
 		private Guna.UI2.WinForms.Guna2CircleButton btnThoat;
 		private System.Windows.Forms.Panel pnlAdminControl;
-		private FontAwesome.Sharp.IconButton btnStaff;
+		private FontAwesome.Sharp.IconButton btnBill;
+		private System.Windows.Forms.TabPage tPBill;
+		private FontAwesome.Sharp.IconButton btnProduct;
+		private FontAwesome.Sharp.IconButton btnAccount;
 		private FontAwesome.Sharp.IconButton btnInsight;
 		private FontAwesome.Sharp.IconButton btnAnalysis;
+		private FontAwesome.Sharp.IconButton btnImportBill;
 	}
 }
 
