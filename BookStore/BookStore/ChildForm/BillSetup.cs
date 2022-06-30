@@ -341,9 +341,9 @@ namespace BookStore.ChildForm
 				BillBLL.Instance.InsertBillDetail(new ChiTietHoaDon()
 				{
 					MaHoaDon = maHoaDon,
-					MaSP = int.Parse(rowBox.Tag.ToString()),
-					Gia = decimal.ToDouble(rowBox.NudPrice.Value),
-					SoLuong = decimal.ToInt16(rowBox.NudProductAmount.Value)
+					MaSP = int.Parse((rowBox.Tag as Tuple<string, int>).Item1),
+					Gia = Convert.ToDouble(rowBox.NudPrice.Value),
+					SoLuong = Convert.ToInt16(rowBox.NudProductAmount.Value)
 				});
 			}
 		}
