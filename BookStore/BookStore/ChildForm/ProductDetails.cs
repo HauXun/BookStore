@@ -119,7 +119,7 @@ namespace BookStore.ChildForm
 						item.NgayGiaoDich.Day.ToString(),
 						item.NgayGiaoDich.DayOfWeek.ToString().Substring(0, 3),
 						item.MaHoaDon.ToString(),
-						$"Cost: {item.TongTien}",
+						$"Thành tiền: {item.TongTien}",
 						item.NgayGiaoDich.ToShortTimeString(),
 						Color.FromArgb(199, 220, 223),
 						Color.White,
