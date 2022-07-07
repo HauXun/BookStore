@@ -30,8 +30,9 @@ namespace BookStore.Extensions
 		static string path = Path.GetFullPath(Environment.CurrentDirectory);
 		static string database = "BookStore.mdf";
 		// AttachDbFilename={path}\{database}
+		// Database=BookStore
 		public static string connectionString
-				= $@"server=(local)\SQLEXPRESS; database=BookStore; integrated security=true;";
+				= $@"server=(local)\SQLEXPRESS; Database=BookStore; integrated security=true;";
 		public DataTable ExcuteQuery(string query, object[] parameter = null)
 		{
 			DataTable data = new DataTable();
