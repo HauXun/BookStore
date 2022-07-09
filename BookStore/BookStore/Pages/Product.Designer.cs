@@ -30,31 +30,30 @@ namespace BookStore.Pages
         private void InitializeComponent()
         {
 			this.components = new System.ComponentModel.Container();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle64 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle65 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle69 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle70 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle66 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle67 = new System.Windows.Forms.DataGridViewCellStyle();
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle68 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Product));
-			this.imageList = new System.Windows.Forms.ImageList(this.components);
 			this.pnlDgv = new Guna.UI2.WinForms.Guna2ShadowPanel();
+			this.btnNewProduct = new FontAwesome.Sharp.IconButton();
 			this.dgvData = new System.Windows.Forms.DataGridView();
-			this.ProductName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.BrandName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.Stock = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.MaSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.TenSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.ThuongHieu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.SoLuongTon = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.DVT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.Cancellation = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.cmsCancelProduct = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
+			this.cancelProductCMS = new System.Windows.Forms.ToolStripMenuItem();
+			this.detailProductCMS = new System.Windows.Forms.ToolStripMenuItem();
 			this.flpFilter = new System.Windows.Forms.FlowLayoutPanel();
-			this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
-			this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
-			this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
-			this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
-			this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
-			this.guna2Button8 = new Guna.UI2.WinForms.Guna2Button();
-			this.guna2Button9 = new Guna.UI2.WinForms.Guna2Button();
-			this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-			this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
 			this.btnFilter = new FontAwesome.Sharp.IconButton();
 			this.tbSearch = new Guna.UI2.WinForms.Guna2TextBox();
 			this.paneBottomLineTitleBar = new System.Windows.Forms.Panel();
@@ -72,36 +71,21 @@ namespace BookStore.Pages
 			this.chartBarBestSellerProduct = new Bunifu.Charts.WinForms.ChartTypes.BunifuBarChart(this.components);
 			this.chartHorizontalBestsellterProduct = new Bunifu.Charts.WinForms.ChartTypes.BunifuHorizontalBarChart(this.components);
 			this.chartBestsellerProduct = new Bunifu.Charts.WinForms.BunifuChartCanvas();
-			this.pnlDataDetails = new Guna.UI2.WinForms.Guna2Panel();
-			this.lbProductStockDetail = new System.Windows.Forms.Label();
-			this.lbProductBrandDetail = new System.Windows.Forms.Label();
-			this.lbProductNameDetail = new System.Windows.Forms.Label();
-			this.lbIDProductDetail = new System.Windows.Forms.Label();
-			this.lbProductStock = new System.Windows.Forms.Label();
-			this.lbProductBrand = new System.Windows.Forms.Label();
-			this.lbProductName = new System.Windows.Forms.Label();
-			this.lbIDProduct = new System.Windows.Forms.Label();
 			this.pnlChartBestsellterBox = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
 			this.pnlDgv.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dgvData)).BeginInit();
-			this.flpFilter.SuspendLayout();
+			this.cmsCancelProduct.SuspendLayout();
 			this.paneBottomLineTitleBar.SuspendLayout();
 			this.tlpHeader.SuspendLayout();
 			this.pnlHeaderBox2.SuspendLayout();
 			this.pnlHeaderBox1.SuspendLayout();
-			this.pnlDataDetails.SuspendLayout();
 			this.pnlChartBestsellterBox.SuspendLayout();
 			this.SuspendLayout();
-			// 
-			// imageList
-			// 
-			this.imageList.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-			this.imageList.ImageSize = new System.Drawing.Size(16, 16);
-			this.imageList.TransparentColor = System.Drawing.Color.Transparent;
 			// 
 			// pnlDgv
 			// 
 			this.pnlDgv.BackColor = System.Drawing.Color.Transparent;
+			this.pnlDgv.Controls.Add(this.btnNewProduct);
 			this.pnlDgv.Controls.Add(this.dgvData);
 			this.pnlDgv.Controls.Add(this.flpFilter);
 			this.pnlDgv.Controls.Add(this.btnFilter);
@@ -115,292 +99,198 @@ namespace BookStore.Pages
 			this.pnlDgv.ShadowDepth = 0;
 			this.pnlDgv.ShadowShift = 0;
 			this.pnlDgv.ShadowStyle = Guna.UI2.WinForms.Guna2ShadowPanel.ShadowMode.ForwardDiagonal;
-			this.pnlDgv.Size = new System.Drawing.Size(870, 397);
+			this.pnlDgv.Size = new System.Drawing.Size(1206, 397);
 			this.pnlDgv.TabIndex = 44;
+			// 
+			// btnNewProduct
+			// 
+			this.btnNewProduct.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+			this.btnNewProduct.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(11)))), ((int)(((byte)(85)))));
+			this.btnNewProduct.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnNewProduct.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
+			this.btnNewProduct.FlatAppearance.BorderSize = 0;
+			this.btnNewProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnNewProduct.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
+			this.btnNewProduct.ForeColor = System.Drawing.Color.White;
+			this.btnNewProduct.IconChar = FontAwesome.Sharp.IconChar.Plus;
+			this.btnNewProduct.IconColor = System.Drawing.Color.White;
+			this.btnNewProduct.IconFont = FontAwesome.Sharp.IconFont.Auto;
+			this.btnNewProduct.IconSize = 25;
+			this.btnNewProduct.Location = new System.Drawing.Point(72, 10);
+			this.btnNewProduct.Margin = new System.Windows.Forms.Padding(3, 3, 20, 5);
+			this.btnNewProduct.Name = "btnNewProduct";
+			this.btnNewProduct.Padding = new System.Windows.Forms.Padding(1, 2, 0, 0);
+			this.btnNewProduct.Size = new System.Drawing.Size(35, 35);
+			this.btnNewProduct.TabIndex = 62;
+			this.btnNewProduct.TabStop = false;
+			this.btnNewProduct.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.btnNewProduct.UseVisualStyleBackColor = false;
 			// 
 			// dgvData
 			// 
 			this.dgvData.AllowUserToAddRows = false;
 			this.dgvData.AllowUserToDeleteRows = false;
 			this.dgvData.AllowUserToResizeRows = false;
-			dataGridViewCellStyle64.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(46)))), ((int)(((byte)(86)))));
-			this.dgvData.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle64;
+			dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+			this.dgvData.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+			this.dgvData.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
 			this.dgvData.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
 			this.dgvData.BackgroundColor = System.Drawing.Color.White;
 			this.dgvData.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.dgvData.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
 			this.dgvData.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-			dataGridViewCellStyle65.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-			dataGridViewCellStyle65.BackColor = System.Drawing.Color.WhiteSmoke;
-			dataGridViewCellStyle65.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle65.ForeColor = System.Drawing.Color.Gray;
-			dataGridViewCellStyle65.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			dataGridViewCellStyle65.SelectionForeColor = System.Drawing.Color.DimGray;
-			dataGridViewCellStyle65.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.dgvData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle65;
+			dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+			dataGridViewCellStyle2.BackColor = System.Drawing.Color.WhiteSmoke;
+			dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Gray;
+			dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.DimGray;
+			dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.dgvData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
 			this.dgvData.ColumnHeadersHeight = 40;
 			this.dgvData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
 			this.dgvData.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ProductName,
-            this.BrandName,
-            this.Stock,
-            this.DVT});
-			dataGridViewCellStyle69.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			dataGridViewCellStyle69.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(34)))), ((int)(((byte)(76)))));
-			dataGridViewCellStyle69.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle69.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			dataGridViewCellStyle69.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(160)))), ((int)(((byte)(104)))));
-			dataGridViewCellStyle69.SelectionForeColor = System.Drawing.Color.White;
-			dataGridViewCellStyle69.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-			this.dgvData.DefaultCellStyle = dataGridViewCellStyle69;
+            this.MaSP,
+            this.TenSP,
+            this.ThuongHieu,
+            this.SoLuongTon,
+            this.DVT,
+            this.Cancellation});
+			this.dgvData.ContextMenuStrip = this.cmsCancelProduct;
+			dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+			dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Gray;
+			dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.WhiteSmoke;
+			dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.DimGray;
+			dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+			this.dgvData.DefaultCellStyle = dataGridViewCellStyle9;
 			this.dgvData.EnableHeadersVisualStyles = false;
 			this.dgvData.Location = new System.Drawing.Point(0, 101);
 			this.dgvData.Margin = new System.Windows.Forms.Padding(0, 5, 0, 0);
 			this.dgvData.Name = "dgvData";
 			this.dgvData.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-			dataGridViewCellStyle70.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-			dataGridViewCellStyle70.BackColor = System.Drawing.SystemColors.Control;
-			dataGridViewCellStyle70.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			dataGridViewCellStyle70.ForeColor = System.Drawing.SystemColors.WindowText;
-			dataGridViewCellStyle70.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-			dataGridViewCellStyle70.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-			dataGridViewCellStyle70.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-			this.dgvData.RowHeadersDefaultCellStyle = dataGridViewCellStyle70;
+			dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+			dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
+			dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
+			dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+			dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+			dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+			this.dgvData.RowHeadersDefaultCellStyle = dataGridViewCellStyle10;
 			this.dgvData.RowHeadersVisible = false;
 			this.dgvData.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
 			this.dgvData.RowTemplate.Height = 50;
 			this.dgvData.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-			this.dgvData.Size = new System.Drawing.Size(870, 296);
+			this.dgvData.Size = new System.Drawing.Size(1206, 296);
 			this.dgvData.TabIndex = 61;
+			this.dgvData.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvData_CellDoubleClick);
 			// 
-			// ProductName
+			// MaSP
 			// 
-			this.ProductName.DataPropertyName = "ProductName";
-			this.ProductName.FillWeight = 400F;
-			this.ProductName.HeaderText = "Tên sản phẩm";
-			this.ProductName.Name = "ProductName";
-			this.ProductName.ReadOnly = true;
+			this.MaSP.DataPropertyName = "MaSP";
+			dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+			this.MaSP.DefaultCellStyle = dataGridViewCellStyle3;
+			this.MaSP.FillWeight = 250F;
+			this.MaSP.HeaderText = "Mã sản phẩm";
+			this.MaSP.Name = "MaSP";
+			this.MaSP.ReadOnly = true;
 			// 
-			// BrandName
+			// TenSP
 			// 
-			this.BrandName.DataPropertyName = "BrandName";
-			dataGridViewCellStyle66.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-			this.BrandName.DefaultCellStyle = dataGridViewCellStyle66;
-			this.BrandName.FillWeight = 200F;
-			this.BrandName.HeaderText = "Thương hiệu";
-			this.BrandName.Name = "BrandName";
-			this.BrandName.ReadOnly = true;
+			this.TenSP.DataPropertyName = "TenSP";
+			dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+			this.TenSP.DefaultCellStyle = dataGridViewCellStyle4;
+			this.TenSP.FillWeight = 450F;
+			this.TenSP.HeaderText = "Tên sản phẩm";
+			this.TenSP.Name = "TenSP";
+			this.TenSP.ReadOnly = true;
 			// 
-			// Stock
+			// ThuongHieu
 			// 
-			this.Stock.DataPropertyName = "Stock";
-			dataGridViewCellStyle67.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-			this.Stock.DefaultCellStyle = dataGridViewCellStyle67;
-			this.Stock.HeaderText = "Số lượng tồn";
-			this.Stock.Name = "Stock";
-			this.Stock.ReadOnly = true;
+			this.ThuongHieu.DataPropertyName = "ThuongHieu";
+			dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+			this.ThuongHieu.DefaultCellStyle = dataGridViewCellStyle5;
+			this.ThuongHieu.FillWeight = 200F;
+			this.ThuongHieu.HeaderText = "Thương hiệu";
+			this.ThuongHieu.Name = "ThuongHieu";
+			this.ThuongHieu.ReadOnly = true;
+			// 
+			// SoLuongTon
+			// 
+			this.SoLuongTon.DataPropertyName = "SoLuongTon";
+			dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+			this.SoLuongTon.DefaultCellStyle = dataGridViewCellStyle6;
+			this.SoLuongTon.FillWeight = 200F;
+			this.SoLuongTon.HeaderText = "Số lượng tồn";
+			this.SoLuongTon.Name = "SoLuongTon";
+			this.SoLuongTon.ReadOnly = true;
 			// 
 			// DVT
 			// 
 			this.DVT.DataPropertyName = "DVT";
-			dataGridViewCellStyle68.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-			this.DVT.DefaultCellStyle = dataGridViewCellStyle68;
+			dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+			this.DVT.DefaultCellStyle = dataGridViewCellStyle7;
 			this.DVT.HeaderText = "DVT";
 			this.DVT.Name = "DVT";
 			this.DVT.ReadOnly = true;
 			// 
+			// Cancellation
+			// 
+			this.Cancellation.DataPropertyName = "Cancellation";
+			dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+			this.Cancellation.DefaultCellStyle = dataGridViewCellStyle8;
+			this.Cancellation.HeaderText = "Cancellation";
+			this.Cancellation.Name = "Cancellation";
+			this.Cancellation.ReadOnly = true;
+			// 
+			// cmsCancelProduct
+			// 
+			this.cmsCancelProduct.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cancelProductCMS,
+            this.detailProductCMS});
+			this.cmsCancelProduct.Name = "cmsCancelProduct";
+			this.cmsCancelProduct.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+			this.cmsCancelProduct.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
+			this.cmsCancelProduct.RenderStyle.ColorTable = null;
+			this.cmsCancelProduct.RenderStyle.RoundedEdges = true;
+			this.cmsCancelProduct.RenderStyle.SelectionArrowColor = System.Drawing.Color.White;
+			this.cmsCancelProduct.RenderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+			this.cmsCancelProduct.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
+			this.cmsCancelProduct.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
+			this.cmsCancelProduct.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+			this.cmsCancelProduct.Size = new System.Drawing.Size(168, 48);
+			// 
+			// cancelProductCMS
+			// 
+			this.cancelProductCMS.Name = "cancelProductCMS";
+			this.cancelProductCMS.Size = new System.Drawing.Size(167, 22);
+			this.cancelProductCMS.Text = "Hủy sản phẩm";
+			this.cancelProductCMS.Click += new System.EventHandler(this.cancelProductCMS_Click);
+			// 
+			// detailProductCMS
+			// 
+			this.detailProductCMS.Name = "detailProductCMS";
+			this.detailProductCMS.Size = new System.Drawing.Size(167, 22);
+			this.detailProductCMS.Text = "Chi tiết sản phẩm";
+			this.detailProductCMS.Click += new System.EventHandler(this.detailProductCMS_Click);
+			// 
 			// flpFilter
 			// 
+			this.flpFilter.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
 			this.flpFilter.AutoScroll = true;
-			this.flpFilter.Controls.Add(this.guna2Button3);
-			this.flpFilter.Controls.Add(this.guna2Button4);
-			this.flpFilter.Controls.Add(this.guna2Button5);
-			this.flpFilter.Controls.Add(this.guna2Button6);
-			this.flpFilter.Controls.Add(this.guna2Button7);
-			this.flpFilter.Controls.Add(this.guna2Button8);
-			this.flpFilter.Controls.Add(this.guna2Button9);
-			this.flpFilter.Controls.Add(this.guna2Button1);
-			this.flpFilter.Controls.Add(this.guna2Button2);
 			this.flpFilter.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
 			this.flpFilter.Location = new System.Drawing.Point(40, 48);
 			this.flpFilter.Margin = new System.Windows.Forms.Padding(40, 0, 40, 0);
 			this.flpFilter.Name = "flpFilter";
-			this.flpFilter.Size = new System.Drawing.Size(790, 48);
+			this.flpFilter.Size = new System.Drawing.Size(1126, 48);
 			this.flpFilter.TabIndex = 19;
-			// 
-			// guna2Button3
-			// 
-			this.guna2Button3.BorderRadius = 5;
-			this.guna2Button3.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.guna2Button3.DefaultAutoSize = true;
-			this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-			this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-			this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-			this.guna2Button3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			this.guna2Button3.Font = new System.Drawing.Font("Tahoma", 10F);
-			this.guna2Button3.ForeColor = System.Drawing.Color.DimGray;
-			this.guna2Button3.Location = new System.Drawing.Point(0, 0);
-			this.guna2Button3.Margin = new System.Windows.Forms.Padding(0, 0, 10, 0);
-			this.guna2Button3.Name = "guna2Button3";
-			this.guna2Button3.Size = new System.Drawing.Size(88, 27);
-			this.guna2Button3.TabIndex = 20;
-			this.guna2Button3.Text = "Book     x";
-			// 
-			// guna2Button4
-			// 
-			this.guna2Button4.BorderRadius = 5;
-			this.guna2Button4.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.guna2Button4.DefaultAutoSize = true;
-			this.guna2Button4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-			this.guna2Button4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-			this.guna2Button4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.guna2Button4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-			this.guna2Button4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-			this.guna2Button4.Font = new System.Drawing.Font("Tahoma", 10F);
-			this.guna2Button4.ForeColor = System.Drawing.Color.DimGray;
-			this.guna2Button4.Location = new System.Drawing.Point(98, 0);
-			this.guna2Button4.Margin = new System.Windows.Forms.Padding(0, 0, 10, 0);
-			this.guna2Button4.Name = "guna2Button4";
-			this.guna2Button4.Size = new System.Drawing.Size(104, 27);
-			this.guna2Button4.TabIndex = 21;
-			this.guna2Button4.Text = "CasioFx     x";
-			// 
-			// guna2Button5
-			// 
-			this.guna2Button5.BorderRadius = 5;
-			this.guna2Button5.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.guna2Button5.DefaultAutoSize = true;
-			this.guna2Button5.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-			this.guna2Button5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-			this.guna2Button5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.guna2Button5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-			this.guna2Button5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-			this.guna2Button5.Font = new System.Drawing.Font("Tahoma", 10F);
-			this.guna2Button5.ForeColor = System.Drawing.Color.DimGray;
-			this.guna2Button5.Location = new System.Drawing.Point(212, 0);
-			this.guna2Button5.Margin = new System.Windows.Forms.Padding(0, 0, 10, 0);
-			this.guna2Button5.Name = "guna2Button5";
-			this.guna2Button5.Size = new System.Drawing.Size(146, 27);
-			this.guna2Button5.TabIndex = 22;
-			this.guna2Button5.Text = "Drawing Table     x";
-			// 
-			// guna2Button6
-			// 
-			this.guna2Button6.BorderRadius = 5;
-			this.guna2Button6.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.guna2Button6.DefaultAutoSize = true;
-			this.guna2Button6.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-			this.guna2Button6.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-			this.guna2Button6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.guna2Button6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-			this.guna2Button6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-			this.guna2Button6.Font = new System.Drawing.Font("Tahoma", 10F);
-			this.guna2Button6.ForeColor = System.Drawing.Color.DimGray;
-			this.guna2Button6.Location = new System.Drawing.Point(368, 0);
-			this.guna2Button6.Margin = new System.Windows.Forms.Padding(0, 0, 10, 0);
-			this.guna2Button6.Name = "guna2Button6";
-			this.guna2Button6.Size = new System.Drawing.Size(81, 27);
-			this.guna2Button6.TabIndex = 23;
-			this.guna2Button6.Text = "Pen     x";
-			// 
-			// guna2Button7
-			// 
-			this.guna2Button7.BorderRadius = 5;
-			this.guna2Button7.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.guna2Button7.DefaultAutoSize = true;
-			this.guna2Button7.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-			this.guna2Button7.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-			this.guna2Button7.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.guna2Button7.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-			this.guna2Button7.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-			this.guna2Button7.Font = new System.Drawing.Font("Tahoma", 10F);
-			this.guna2Button7.ForeColor = System.Drawing.Color.DimGray;
-			this.guna2Button7.Location = new System.Drawing.Point(459, 0);
-			this.guna2Button7.Margin = new System.Windows.Forms.Padding(0, 0, 10, 0);
-			this.guna2Button7.Name = "guna2Button7";
-			this.guna2Button7.Size = new System.Drawing.Size(156, 27);
-			this.guna2Button7.TabIndex = 24;
-			this.guna2Button7.Text = "Geographic Map     x";
-			// 
-			// guna2Button8
-			// 
-			this.guna2Button8.BorderRadius = 5;
-			this.guna2Button8.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.guna2Button8.DefaultAutoSize = true;
-			this.guna2Button8.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-			this.guna2Button8.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-			this.guna2Button8.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.guna2Button8.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-			this.guna2Button8.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-			this.guna2Button8.Font = new System.Drawing.Font("Tahoma", 10F);
-			this.guna2Button8.ForeColor = System.Drawing.Color.DimGray;
-			this.guna2Button8.Location = new System.Drawing.Point(625, 0);
-			this.guna2Button8.Margin = new System.Windows.Forms.Padding(0, 0, 10, 0);
-			this.guna2Button8.Name = "guna2Button8";
-			this.guna2Button8.Size = new System.Drawing.Size(144, 27);
-			this.guna2Button8.TabIndex = 25;
-			this.guna2Button8.Text = "Đầu cắt moiiiii     x";
-			// 
-			// guna2Button9
-			// 
-			this.guna2Button9.BorderRadius = 5;
-			this.guna2Button9.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.guna2Button9.DefaultAutoSize = true;
-			this.guna2Button9.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-			this.guna2Button9.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-			this.guna2Button9.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.guna2Button9.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-			this.guna2Button9.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-			this.guna2Button9.Font = new System.Drawing.Font("Tahoma", 10F);
-			this.guna2Button9.ForeColor = System.Drawing.Color.DimGray;
-			this.guna2Button9.Location = new System.Drawing.Point(779, 0);
-			this.guna2Button9.Margin = new System.Windows.Forms.Padding(0, 0, 10, 0);
-			this.guna2Button9.Name = "guna2Button9";
-			this.guna2Button9.Size = new System.Drawing.Size(150, 27);
-			this.guna2Button9.TabIndex = 26;
-			this.guna2Button9.Text = "Thằng hai dụ á     x";
-			// 
-			// guna2Button1
-			// 
-			this.guna2Button1.BorderRadius = 5;
-			this.guna2Button1.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.guna2Button1.DefaultAutoSize = true;
-			this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-			this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-			this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-			this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-			this.guna2Button1.Font = new System.Drawing.Font("Tahoma", 10F);
-			this.guna2Button1.ForeColor = System.Drawing.Color.DimGray;
-			this.guna2Button1.Location = new System.Drawing.Point(939, 0);
-			this.guna2Button1.Margin = new System.Windows.Forms.Padding(0, 0, 10, 0);
-			this.guna2Button1.Name = "guna2Button1";
-			this.guna2Button1.Size = new System.Drawing.Size(136, 27);
-			this.guna2Button1.TabIndex = 27;
-			this.guna2Button1.Text = "Price > 127$     x";
-			// 
-			// guna2Button2
-			// 
-			this.guna2Button2.BorderRadius = 5;
-			this.guna2Button2.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.guna2Button2.DefaultAutoSize = true;
-			this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-			this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-			this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-			this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-			this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-			this.guna2Button2.Font = new System.Drawing.Font("Tahoma", 10F);
-			this.guna2Button2.ForeColor = System.Drawing.Color.DimGray;
-			this.guna2Button2.Location = new System.Drawing.Point(1085, 0);
-			this.guna2Button2.Margin = new System.Windows.Forms.Padding(0, 0, 10, 0);
-			this.guna2Button2.Name = "guna2Button2";
-			this.guna2Button2.Size = new System.Drawing.Size(173, 27);
-			this.guna2Button2.TabIndex = 28;
-			this.guna2Button2.Text = "Author: Hậu lùa gà     x";
 			// 
 			// btnFilter
 			// 
+			this.btnFilter.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
 			this.btnFilter.BackColor = System.Drawing.Color.Transparent;
 			this.btnFilter.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.btnFilter.FlatAppearance.BorderColor = System.Drawing.Color.DimGray;
@@ -408,12 +298,12 @@ namespace BookStore.Pages
 			this.btnFilter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btnFilter.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
 			this.btnFilter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			this.btnFilter.IconChar = FontAwesome.Sharp.IconChar.Plus;
+			this.btnFilter.IconChar = FontAwesome.Sharp.IconChar.Filter;
 			this.btnFilter.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
 			this.btnFilter.IconFont = FontAwesome.Sharp.IconFont.Auto;
 			this.btnFilter.IconSize = 25;
 			this.btnFilter.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-			this.btnFilter.Location = new System.Drawing.Point(689, 8);
+			this.btnFilter.Location = new System.Drawing.Point(1025, 8);
 			this.btnFilter.Margin = new System.Windows.Forms.Padding(3, 3, 20, 5);
 			this.btnFilter.Name = "btnFilter";
 			this.btnFilter.Size = new System.Drawing.Size(115, 35);
@@ -422,10 +312,10 @@ namespace BookStore.Pages
 			this.btnFilter.Text = "Add Filter";
 			this.btnFilter.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
 			this.btnFilter.UseVisualStyleBackColor = false;
-			this.btnFilter.Click += new System.EventHandler(this.btnFilter_Click);
 			// 
 			// tbSearch
 			// 
+			this.tbSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
 			this.tbSearch.BorderColor = System.Drawing.Color.Gray;
 			this.tbSearch.BorderRadius = 5;
 			this.tbSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -440,7 +330,7 @@ namespace BookStore.Pages
 			this.tbSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
 			this.tbSearch.IconRight = global::BookStore.Properties.Resources.searchIcon;
 			this.tbSearch.IconRightCursor = System.Windows.Forms.Cursors.Hand;
-			this.tbSearch.Location = new System.Drawing.Point(403, 8);
+			this.tbSearch.Location = new System.Drawing.Point(739, 8);
 			this.tbSearch.Margin = new System.Windows.Forms.Padding(2, 0, 2, 5);
 			this.tbSearch.Name = "tbSearch";
 			this.tbSearch.PasswordChar = '\0';
@@ -552,9 +442,9 @@ namespace BookStore.Pages
 			this.lbHeaderBox2Title.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
 			this.lbHeaderBox2Title.Location = new System.Drawing.Point(3, 0);
 			this.lbHeaderBox2Title.Name = "lbHeaderBox2Title";
-			this.lbHeaderBox2Title.Size = new System.Drawing.Size(138, 24);
+			this.lbHeaderBox2Title.Size = new System.Drawing.Size(203, 24);
 			this.lbHeaderBox2Title.TabIndex = 56;
-			this.lbHeaderBox2Title.Text = "Số lượng tồn";
+			this.lbHeaderBox2Title.Text = "Số lượng sản phẩm";
 			// 
 			// lbHeaderBox2Detail
 			// 
@@ -563,9 +453,9 @@ namespace BookStore.Pages
 			this.lbHeaderBox2Detail.ForeColor = System.Drawing.Color.DimGray;
 			this.lbHeaderBox2Detail.Location = new System.Drawing.Point(4, 24);
 			this.lbHeaderBox2Detail.Name = "lbHeaderBox2Detail";
-			this.lbHeaderBox2Detail.Size = new System.Drawing.Size(141, 17);
+			this.lbHeaderBox2Detail.Size = new System.Drawing.Size(127, 17);
 			this.lbHeaderBox2Detail.TabIndex = 57;
-			this.lbHeaderBox2Detail.Text = "Quota: 100000 pcs";
+			this.lbHeaderBox2Detail.Text = "Tổng cộng: 0 pcs";
 			// 
 			// tlpHeader
 			// 
@@ -613,9 +503,9 @@ namespace BookStore.Pages
 			this.lbHeaderBox1Title.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
 			this.lbHeaderBox1Title.Location = new System.Drawing.Point(3, 3);
 			this.lbHeaderBox1Title.Name = "lbHeaderBox1Title";
-			this.lbHeaderBox1Title.Size = new System.Drawing.Size(117, 24);
+			this.lbHeaderBox1Title.Size = new System.Drawing.Size(155, 24);
 			this.lbHeaderBox1Title.TabIndex = 71;
-			this.lbHeaderBox1Title.Text = "Bestsellter";
+			this.lbHeaderBox1Title.Text = "Bán chạy nhất";
 			// 
 			// lbHeaderBox1Detail
 			// 
@@ -624,9 +514,9 @@ namespace BookStore.Pages
 			this.lbHeaderBox1Detail.ForeColor = System.Drawing.Color.DimGray;
 			this.lbHeaderBox1Detail.Location = new System.Drawing.Point(4, 27);
 			this.lbHeaderBox1Detail.Name = "lbHeaderBox1Detail";
-			this.lbHeaderBox1Detail.Size = new System.Drawing.Size(114, 17);
+			this.lbHeaderBox1Detail.Size = new System.Drawing.Size(244, 17);
 			this.lbHeaderBox1Detail.TabIndex = 72;
-			this.lbHeaderBox1Detail.Text = "Most: 6231 pcs";
+			this.lbHeaderBox1Detail.Text = "Nhiều nhất: 0 pcs kể từ đầu tháng";
 			// 
 			// chartPieConsume
 			// 
@@ -675,15 +565,15 @@ namespace BookStore.Pages
 			this.chartBestsellerProduct.Dock = System.Windows.Forms.DockStyle.Bottom;
 			this.chartBestsellerProduct.Font = new System.Drawing.Font("Microsoft YaHei", 8F);
 			this.chartBestsellerProduct.Labels = new string[] {
-        "Sách lừa đảo",
-        "Đọc suy nghĩ động vật",
-        "Thiết bị gian lận thi cử",
-        "Tai nghe hạt đậu",
-        "Người iu",
-        "Tên lửa hạt nhân",
-        "Chim cánh cụt",
-        "Putin",
-        "Đô nan chum"};
+        "Unk",
+        "Unk",
+        "Unk",
+        "Unk",
+        "Unk",
+        "Unk",
+        "Unk",
+        "Unk",
+        "Unk"};
 			this.chartBestsellerProduct.LegendAlignment = Bunifu.Charts.WinForms.BunifuChartCanvas.LegendAlignmentOptions.center;
 			this.chartBestsellerProduct.LegendDisplay = false;
 			this.chartBestsellerProduct.LegendFont = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -735,131 +625,6 @@ namespace BookStore.Pages
 			this.chartBestsellerProduct.YAxesZeroLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(240)))), ((int)(((byte)(244)))));
 			this.chartBestsellerProduct.YAxesZeroLineWidth = 1;
 			// 
-			// pnlDataDetails
-			// 
-			this.pnlDataDetails.BackColor = System.Drawing.Color.White;
-			this.pnlDataDetails.BorderRadius = 15;
-			this.pnlDataDetails.Controls.Add(this.lbProductStockDetail);
-			this.pnlDataDetails.Controls.Add(this.lbProductBrandDetail);
-			this.pnlDataDetails.Controls.Add(this.lbProductNameDetail);
-			this.pnlDataDetails.Controls.Add(this.lbIDProductDetail);
-			this.pnlDataDetails.Controls.Add(this.lbProductStock);
-			this.pnlDataDetails.Controls.Add(this.lbProductBrand);
-			this.pnlDataDetails.Controls.Add(this.lbProductName);
-			this.pnlDataDetails.Controls.Add(this.lbIDProduct);
-			this.pnlDataDetails.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			this.pnlDataDetails.Location = new System.Drawing.Point(943, 400);
-			this.pnlDataDetails.Name = "pnlDataDetails";
-			this.pnlDataDetails.Size = new System.Drawing.Size(316, 397);
-			this.pnlDataDetails.TabIndex = 61;
-			// 
-			// lbProductStockDetail
-			// 
-			this.lbProductStockDetail.BackColor = System.Drawing.Color.Transparent;
-			this.lbProductStockDetail.Font = new System.Drawing.Font("Segoe UI", 11F);
-			this.lbProductStockDetail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(11)))), ((int)(((byte)(85)))));
-			this.lbProductStockDetail.Location = new System.Drawing.Point(21, 188);
-			this.lbProductStockDetail.Margin = new System.Windows.Forms.Padding(5, 5, 0, 0);
-			this.lbProductStockDetail.Name = "lbProductStockDetail";
-			this.lbProductStockDetail.Size = new System.Drawing.Size(120, 19);
-			this.lbProductStockDetail.TabIndex = 67;
-			this.lbProductStockDetail.Text = "36237582935";
-			this.lbProductStockDetail.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			// 
-			// lbProductBrandDetail
-			// 
-			this.lbProductBrandDetail.AutoSize = true;
-			this.lbProductBrandDetail.BackColor = System.Drawing.Color.Transparent;
-			this.lbProductBrandDetail.Font = new System.Drawing.Font("Segoe UI", 11F);
-			this.lbProductBrandDetail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(11)))), ((int)(((byte)(85)))));
-			this.lbProductBrandDetail.Location = new System.Drawing.Point(21, 136);
-			this.lbProductBrandDetail.Margin = new System.Windows.Forms.Padding(5, 5, 0, 0);
-			this.lbProductBrandDetail.Name = "lbProductBrandDetail";
-			this.lbProductBrandDetail.Size = new System.Drawing.Size(256, 20);
-			this.lbProductBrandDetail.TabIndex = 65;
-			this.lbProductBrandDetail.Text = "Nhà sách cổ đại Ai cập thiên niên kỉ 8";
-			this.lbProductBrandDetail.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			// 
-			// lbProductNameDetail
-			// 
-			this.lbProductNameDetail.AutoSize = true;
-			this.lbProductNameDetail.BackColor = System.Drawing.Color.Transparent;
-			this.lbProductNameDetail.Font = new System.Drawing.Font("Segoe UI", 11F);
-			this.lbProductNameDetail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(11)))), ((int)(((byte)(85)))));
-			this.lbProductNameDetail.Location = new System.Drawing.Point(21, 82);
-			this.lbProductNameDetail.Margin = new System.Windows.Forms.Padding(5, 5, 0, 0);
-			this.lbProductNameDetail.Name = "lbProductNameDetail";
-			this.lbProductNameDetail.Size = new System.Drawing.Size(201, 20);
-			this.lbProductNameDetail.TabIndex = 64;
-			this.lbProductNameDetail.Text = "Bí kiếp tán gái của Napoleon";
-			this.lbProductNameDetail.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			// 
-			// lbIDProductDetail
-			// 
-			this.lbIDProductDetail.AutoSize = true;
-			this.lbIDProductDetail.BackColor = System.Drawing.Color.Transparent;
-			this.lbIDProductDetail.Font = new System.Drawing.Font("Segoe UI", 11F);
-			this.lbIDProductDetail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(11)))), ((int)(((byte)(85)))));
-			this.lbIDProductDetail.Location = new System.Drawing.Point(21, 29);
-			this.lbIDProductDetail.Margin = new System.Windows.Forms.Padding(5, 5, 0, 0);
-			this.lbIDProductDetail.Name = "lbIDProductDetail";
-			this.lbIDProductDetail.Size = new System.Drawing.Size(153, 20);
-			this.lbIDProductDetail.TabIndex = 63;
-			this.lbIDProductDetail.Text = "362375829356236726";
-			this.lbIDProductDetail.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			// 
-			// lbProductStock
-			// 
-			this.lbProductStock.AutoSize = true;
-			this.lbProductStock.BackColor = System.Drawing.Color.Transparent;
-			this.lbProductStock.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-			this.lbProductStock.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(11)))), ((int)(((byte)(85)))));
-			this.lbProductStock.Location = new System.Drawing.Point(7, 164);
-			this.lbProductStock.Margin = new System.Windows.Forms.Padding(5, 10, 0, 0);
-			this.lbProductStock.Name = "lbProductStock";
-			this.lbProductStock.Size = new System.Drawing.Size(118, 19);
-			this.lbProductStock.TabIndex = 9;
-			this.lbProductStock.Text = "Số lượng tồn:";
-			// 
-			// lbProductBrand
-			// 
-			this.lbProductBrand.AutoSize = true;
-			this.lbProductBrand.BackColor = System.Drawing.Color.Transparent;
-			this.lbProductBrand.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-			this.lbProductBrand.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(11)))), ((int)(((byte)(85)))));
-			this.lbProductBrand.Location = new System.Drawing.Point(7, 112);
-			this.lbProductBrand.Margin = new System.Windows.Forms.Padding(5, 10, 0, 0);
-			this.lbProductBrand.Name = "lbProductBrand";
-			this.lbProductBrand.Size = new System.Drawing.Size(117, 19);
-			this.lbProductBrand.TabIndex = 8;
-			this.lbProductBrand.Text = "Thương hiệu:";
-			// 
-			// lbProductName
-			// 
-			this.lbProductName.AutoSize = true;
-			this.lbProductName.BackColor = System.Drawing.Color.Transparent;
-			this.lbProductName.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-			this.lbProductName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(11)))), ((int)(((byte)(85)))));
-			this.lbProductName.Location = new System.Drawing.Point(7, 59);
-			this.lbProductName.Margin = new System.Windows.Forms.Padding(5, 10, 0, 0);
-			this.lbProductName.Name = "lbProductName";
-			this.lbProductName.Size = new System.Drawing.Size(129, 19);
-			this.lbProductName.TabIndex = 7;
-			this.lbProductName.Text = "Tên sản phẩm:";
-			// 
-			// lbIDProduct
-			// 
-			this.lbIDProduct.AutoSize = true;
-			this.lbIDProduct.BackColor = System.Drawing.Color.Transparent;
-			this.lbIDProduct.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-			this.lbIDProduct.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(11)))), ((int)(((byte)(85)))));
-			this.lbIDProduct.Location = new System.Drawing.Point(7, 5);
-			this.lbIDProduct.Margin = new System.Windows.Forms.Padding(5, 5, 0, 0);
-			this.lbIDProduct.Name = "lbIDProduct";
-			this.lbIDProduct.Size = new System.Drawing.Size(122, 19);
-			this.lbIDProduct.TabIndex = 0;
-			this.lbIDProduct.Text = "Mã sản phẩm:";
-			// 
 			// pnlChartBestsellterBox
 			// 
 			this.pnlChartBestsellterBox.Controls.Add(this.chartBestsellerProduct);
@@ -873,7 +638,6 @@ namespace BookStore.Pages
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
 			this.BackColor = System.Drawing.Color.White;
 			this.Controls.Add(this.pnlChartBestsellterBox);
-			this.Controls.Add(this.pnlDataDetails);
 			this.Controls.Add(this.tlpHeader);
 			this.Controls.Add(this.paneBottomLineTitleBar);
 			this.Controls.Add(this.pnlDgv);
@@ -882,65 +646,49 @@ namespace BookStore.Pages
 			this.Load += new System.EventHandler(this.Product_Load);
 			this.pnlDgv.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.dgvData)).EndInit();
-			this.flpFilter.ResumeLayout(false);
-			this.flpFilter.PerformLayout();
+			this.cmsCancelProduct.ResumeLayout(false);
 			this.paneBottomLineTitleBar.ResumeLayout(false);
 			this.tlpHeader.ResumeLayout(false);
 			this.pnlHeaderBox2.ResumeLayout(false);
 			this.pnlHeaderBox2.PerformLayout();
 			this.pnlHeaderBox1.ResumeLayout(false);
 			this.pnlHeaderBox1.PerformLayout();
-			this.pnlDataDetails.ResumeLayout(false);
-			this.pnlDataDetails.PerformLayout();
 			this.pnlChartBestsellterBox.ResumeLayout(false);
 			this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.ImageList imageList;
 		private Guna.UI2.WinForms.Guna2ShadowPanel pnlDgv;
-		private FontAwesome.Sharp.IconButton btnFilter;
 		private Guna.UI2.WinForms.Guna2TextBox tbSearch;
 		private System.Windows.Forms.Panel paneBottomLineTitleBar;
 		private System.Windows.Forms.Panel BottomLineTitleBar;
 		private System.Windows.Forms.FlowLayoutPanel flpFilter;
-		private Guna.UI2.WinForms.Guna2Button guna2Button3;
-		private Guna.UI2.WinForms.Guna2Button guna2Button4;
-		private Guna.UI2.WinForms.Guna2Button guna2Button5;
-		private Guna.UI2.WinForms.Guna2Button guna2Button6;
 		private Bunifu.Charts.WinForms.ChartTypes.BunifuDoughnutChart doughnutChartStock;
-		private Guna.UI2.WinForms.Guna2Button guna2Button7;
 		private System.Windows.Forms.Label lbHeaderBox2Title;
 		private System.Windows.Forms.Label lbHeaderBox2Detail;
 		private System.Windows.Forms.TableLayoutPanel tlpHeader;
 		private Guna.UI2.WinForms.Guna2GradientPanel pnlHeaderBox2;
 		private Bunifu.Charts.WinForms.ChartTypes.BunifuPieChart chartPieConsume;
 		private Bunifu.Charts.WinForms.ChartTypes.BunifuBarChart chartBarBestSellerProduct;
-		private Guna.UI2.WinForms.Guna2Button guna2Button8;
-		private Guna.UI2.WinForms.Guna2Button guna2Button9;
 		private Bunifu.Charts.WinForms.BunifuChartCanvas chartStock;
-		private Guna.UI2.WinForms.Guna2Button guna2Button1;
-		private Guna.UI2.WinForms.Guna2Button guna2Button2;
 		private Bunifu.Charts.WinForms.ChartTypes.BunifuHorizontalBarChart chartHorizontalBestsellterProduct;
-		public System.Windows.Forms.DataGridView dgvData;
-		private Guna.UI2.WinForms.Guna2Panel pnlDataDetails;
-		private System.Windows.Forms.Label lbIDProduct;
-		private System.Windows.Forms.Label lbProductStock;
-		private System.Windows.Forms.Label lbProductBrand;
-		private System.Windows.Forms.Label lbProductName;
 		private System.Windows.Forms.Label lbHeaderBox1Title;
 		private System.Windows.Forms.Label lbHeaderBox1Detail;
-		private System.Windows.Forms.Label lbProductStockDetail;
-		private System.Windows.Forms.Label lbProductBrandDetail;
-		private System.Windows.Forms.Label lbProductNameDetail;
-		private System.Windows.Forms.Label lbIDProductDetail;
 		private Guna.UI2.WinForms.Guna2GradientPanel pnlHeaderBox1;
 		private Bunifu.Charts.WinForms.BunifuChartCanvas chartBestsellerProduct;
 		private Guna.UI2.WinForms.Guna2CustomGradientPanel pnlChartBestsellterBox;
-		private System.Windows.Forms.DataGridViewTextBoxColumn ProductName;
-		private System.Windows.Forms.DataGridViewTextBoxColumn BrandName;
-		private System.Windows.Forms.DataGridViewTextBoxColumn Stock;
+		public System.Windows.Forms.DataGridView dgvData;
+		private System.Windows.Forms.DataGridViewTextBoxColumn MaSP;
+		private System.Windows.Forms.DataGridViewTextBoxColumn TenSP;
+		private System.Windows.Forms.DataGridViewTextBoxColumn ThuongHieu;
+		private System.Windows.Forms.DataGridViewTextBoxColumn SoLuongTon;
 		private System.Windows.Forms.DataGridViewTextBoxColumn DVT;
+		private System.Windows.Forms.DataGridViewTextBoxColumn Cancellation;
+		public FontAwesome.Sharp.IconButton btnFilter;
+		public FontAwesome.Sharp.IconButton btnNewProduct;
+		private Guna.UI2.WinForms.Guna2ContextMenuStrip cmsCancelProduct;
+		private System.Windows.Forms.ToolStripMenuItem cancelProductCMS;
+		private System.Windows.Forms.ToolStripMenuItem detailProductCMS;
 	}
 }
