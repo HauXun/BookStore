@@ -32,6 +32,10 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu.Charts.WinForms">
       <HintPath>..\packages\Bunifu.Charts.WinForms.1.1.5\lib\net40\Bunifu.Charts.WinForms.dll</HintPath>
@@ -152,11 +156,50 @@
     <Compile Include="BookShop.Designer.cs">
       <DependentUpon>BookShop.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChildForm\MultiBillRowBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChildForm\NewDoiTacKhachHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChildForm\NewDoiTacKhachHang.Designer.cs">
+      <DependentUpon>NewDoiTacKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForm\ProductInfoTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChildForm\ProductDetailBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChildForm\NewProduct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChildForm\NewProduct.Designer.cs">
+      <DependentUpon>NewProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForm\FilterCheckBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChildForm\FilterDetailBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="ChildForm\BillSetup.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="ChildForm\BillSetup.Designer.cs">
       <DependentUpon>BillSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForm\ProductDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChildForm\ProductDetails.Designer.cs">
+      <DependentUpon>ProductDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForm\ProductFilter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChildForm\ProductFilter.Designer.cs">
+      <DependentUpon>ProductFilter.cs</DependentUpon>
     </Compile>
     <Compile Include="ChildForm\ProductSalableBox.cs">
       <SubType>UserControl</SubType>
@@ -176,29 +219,20 @@
     <Compile Include="ChildForm\Bills.Designer.cs">
       <DependentUpon>Bills.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChildForm\Login.cs">
+    <Compile Include="ChildForm\AddToBill.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ChildForm\Login.Designer.cs">
-      <DependentUpon>Login.cs</DependentUpon>
+    <Compile Include="ChildForm\AddToBill.Designer.cs">
+      <DependentUpon>AddToBill.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChildForm\NewBills.cs">
+    <Compile Include="ChildForm\AccountPopup.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ChildForm\NewBills.Designer.cs">
-      <DependentUpon>NewBills.cs</DependentUpon>
+    <Compile Include="ChildForm\AccountPopup.Designer.cs">
+      <DependentUpon>AccountPopup.cs</DependentUpon>
     </Compile>
-    <Compile Include="ChildForm\StaffPopup.cs">
+    <Compile Include="ChildForm\AccountRowBox.cs">
       <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ChildForm\StaffPopup.Designer.cs">
-      <DependentUpon>StaffPopup.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ChildForm\Temp.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ChildForm\Temp.Designer.cs">
-      <DependentUpon>Temp.cs</DependentUpon>
     </Compile>
     <Compile Include="Extensions\DataProvider.cs" />
     <Compile Include="Extensions\RJComboBox.cs">
@@ -211,12 +245,27 @@
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="Model\BusinessLogicLayer\AccountBLL.cs" />
+    <Compile Include="Model\BusinessLogicLayer\AnalysisBLL.cs" />
+    <Compile Include="Model\BusinessLogicLayer\BillBLL.cs" />
+    <Compile Include="Model\BusinessLogicLayer\CustomerBLL.cs" />
+    <Compile Include="Model\BusinessLogicLayer\InsightBLL.cs" />
+    <Compile Include="Model\BusinessLogicLayer\ProductBLL.cs" />
+    <Compile Include="Model\BusinessLogicLayer\ProductFilterBLL.cs" />
     <Compile Include="Model\DataAccessLayer\AccountDAL.cs" />
+    <Compile Include="Model\DataAccessLayer\AnalysisDAL.cs" />
+    <Compile Include="Model\DataAccessLayer\BillDAL.cs" />
+    <Compile Include="Model\DataAccessLayer\CustomerDAL.cs" />
+    <Compile Include="Model\DataAccessLayer\InsightDAL.cs" />
+    <Compile Include="Model\DataAccessLayer\ProductDAL.cs" />
+    <Compile Include="Model\DataAccessLayer\ProductFilterDAL.cs" />
     <Compile Include="Model\Entities\But.cs" />
     <Compile Include="Model\Entities\ChiTietHoaDon.cs" />
     <Compile Include="Model\Entities\DoiTac.cs" />
     <Compile Include="Model\Entities\HoaDon.cs" />
+    <Compile Include="Model\Entities\InvoiceDetail.cs" />
     <Compile Include="Model\Entities\LoaiHoaDon.cs" />
+    <Compile Include="Model\Entities\ProductBestSellter.cs" />
+    <Compile Include="Model\Entities\ProductSell.cs" />
     <Compile Include="Model\Entities\Sach.cs" />
     <Compile Include="Model\Entities\SanPham.cs" />
     <Compile Include="Model\Entities\Taikhoan.cs" />
@@ -234,19 +283,19 @@
     <Compile Include="Pages\Insight.Designer.cs">
       <DependentUpon>Insight.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pages\MainShop.cs">
+    <Compile Include="Pages\Bill.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Pages\MainShop.Designer.cs">
-      <DependentUpon>MainShop.cs</DependentUpon>
+    <Compile Include="Pages\Bill.Designer.cs">
+      <DependentUpon>Bill.cs</DependentUpon>
     </Compile>
     <Compile Include="Extensions\Popup\ControlExtensions.cs" />
     <Compile Include="Extensions\Popup\DummyProcessor.cs" />
-    <Compile Include="ChildForm\NewStaffPopup.cs">
+    <Compile Include="ChildForm\NewAccountPopup.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ChildForm\NewStaffPopup.Designer.cs">
-      <DependentUpon>NewStaffPopup.cs</DependentUpon>
+    <Compile Include="ChildForm\NewAccountPopup.Designer.cs">
+      <DependentUpon>NewAccountPopup.cs</DependentUpon>
     </Compile>
     <Compile Include="Extensions\Popup\ModelPopup.cs">
       <SubType>UserControl</SubType>
@@ -257,17 +306,35 @@
     <Compile Include="Pages\Product.Designer.cs">
       <DependentUpon>Product.cs</DependentUpon>
     </Compile>
-    <Compile Include="Partial\BookStore.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Partial\Session.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="BookShop.resx">
       <DependentUpon>BookShop.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ChildForm\MultiBillRowBox.resx">
+      <DependentUpon>MultiBillRowBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForm\NewDoiTacKhachHang.resx">
+      <DependentUpon>NewDoiTacKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForm\ProductInfoTextBox.resx">
+      <DependentUpon>ProductInfoTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForm\ProductDetailBox.resx">
+      <DependentUpon>ProductDetailBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForm\NewProduct.resx">
+      <DependentUpon>NewProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForm\FilterCheckBox.resx">
+      <DependentUpon>FilterCheckBox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ChildForm\BillDetailBox.resx">
       <DependentUpon>BillDetailBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForm\FilterDetailBox.resx">
+      <DependentUpon>FilterDetailBox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChildForm\BillRowBox.resx">
       <DependentUpon>BillRowBox.cs</DependentUpon>
@@ -278,11 +345,14 @@
     <EmbeddedResource Include="ChildForm\BillSetup.resx">
       <DependentUpon>BillSetup.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChildForm\Login.resx">
-      <DependentUpon>Login.cs</DependentUpon>
+    <EmbeddedResource Include="ChildForm\AddToBill.resx">
+      <DependentUpon>AddToBill.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChildForm\NewBills.resx">
-      <DependentUpon>NewBills.cs</DependentUpon>
+    <EmbeddedResource Include="ChildForm\ProductDetails.resx">
+      <DependentUpon>ProductDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForm\ProductFilter.resx">
+      <DependentUpon>ProductFilter.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChildForm\ProductSalableBox.resx">
       <DependentUpon>ProductSalableBox.cs</DependentUpon>
@@ -290,11 +360,11 @@
     <EmbeddedResource Include="ChildForm\RevenueDetailBox.resx">
       <DependentUpon>RevenueDetailBox.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChildForm\StaffPopup.resx">
-      <DependentUpon>StaffPopup.cs</DependentUpon>
+    <EmbeddedResource Include="ChildForm\AccountPopup.resx">
+      <DependentUpon>AccountPopup.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChildForm\Temp.resx">
-      <DependentUpon>Temp.cs</DependentUpon>
+    <EmbeddedResource Include="ChildForm\AccountRowBox.resx">
+      <DependentUpon>AccountRowBox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -305,11 +375,11 @@
     <EmbeddedResource Include="Pages\Insight.resx">
       <DependentUpon>Insight.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pages\MainShop.resx">
-      <DependentUpon>MainShop.cs</DependentUpon>
+    <EmbeddedResource Include="Pages\Bill.resx">
+      <DependentUpon>Bill.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ChildForm\NewStaffPopup.resx">
-      <DependentUpon>NewStaffPopup.cs</DependentUpon>
+    <EmbeddedResource Include="ChildForm\NewAccountPopup.resx">
+      <DependentUpon>NewAccountPopup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Extensions\Popup\ModelPopup.resx">
       <DependentUpon>ModelPopup.cs</DependentUpon>
@@ -350,6 +420,7 @@
     <None Include="Resources\Electronic Devices.png" />
     <None Include="Resources\Book.png" />
     <None Include="Resources\BookStore.jpg" />
+    <None Include="Resources\addIcon.png" />
     <Content Include="Resources\searchIcon.png" />
   </ItemGroup>
   <ItemGroup>
