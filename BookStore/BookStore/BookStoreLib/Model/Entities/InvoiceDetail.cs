@@ -1,0 +1,30 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BookStore.Model.Entities
+{
+	public class InvoiceDetail
+	{
+		public int MaHoaDon { get; set; }
+		public string TenKhachHang { get; set; }
+		public string DiaChi { get; set; }
+		public string SDT { get; set; }
+		public string NguoiBan { get; set; }
+		public string LoaiHoaDon { get; set; }
+		public string ThoiGian { get; set; }
+		public string HinhThucThanhToan { get; set; }
+		public string TongTienHang { get; set; }
+		public decimal GiamGia { get; set; }
+		public string TongThanhToan { get; set; }
+		public string Note { get; set; }
+		public bool Status { get; set; }
+
+		public InvoiceDetail()
+		{
+
+		}
+	}
+}
